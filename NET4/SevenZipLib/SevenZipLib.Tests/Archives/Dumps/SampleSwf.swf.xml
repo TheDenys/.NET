@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>SampleSwf.swf</FileName>
+  <Format>Swf</Format>
+  <PackedSize>3312</PackedSize>
+  <UnPackedSize>3209</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>SampleSwf.swf</Volume>
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>0.9</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>SetBackgroundColor</Comment>
+    </Entry>
+    <Entry>
+      <FileName>1.12</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1023</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>DoAction</Comment>
+    </Entry>
+    <Entry>
+      <FileName>10.2</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1876</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>DefineShape</Comment>
+    </Entry>
+    <Entry>
+      <FileName>11.26</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>6</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>PlaceObject2</Comment>
+    </Entry>
+    <Entry>
+      <FileName>12.2</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>35</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>DefineShape</Comment>
+    </Entry>
+    <Entry>
+      <FileName>13.34</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>13</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>DefineButton2</Comment>
+    </Entry>
+    <Entry>
+      <FileName>14.26</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>18</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>PlaceObject2</Comment>
+    </Entry>
+    <Entry>
+      <FileName>15.1</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>ShowFrame</Comment>
+    </Entry>
+    <Entry>
+      <FileName>2.2</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>78</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>DefineShape</Comment>
+    </Entry>
+    <Entry>
+      <FileName>3.26</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>6</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>PlaceObject2</Comment>
+    </Entry>
+    <Entry>
+      <FileName>4.48</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>17</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>DefineFont2</Comment>
+    </Entry>
+    <Entry>
+      <FileName>5.37</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>40</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>DefineEditText</Comment>
+    </Entry>
+    <Entry>
+      <FileName>6.26</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>20</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>PlaceObject2</Comment>
+    </Entry>
+    <Entry>
+      <FileName>7.2</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>41</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>DefineShape</Comment>
+    </Entry>
+    <Entry>
+      <FileName>8.39</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>16</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>DefineSprite</Comment>
+    </Entry>
+    <Entry>
+      <FileName>9.26</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>17</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>PlaceObject2</Comment>
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

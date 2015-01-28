@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>Sample.exe.lzma86</FileName>
+  <Format>lzma86</Format>
+  <PackedSize>174806</PackedSize>
+  <UnPackedSize>174806</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>Sample.exe.lzma86</Volume>
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>Sample.exe</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>462336</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

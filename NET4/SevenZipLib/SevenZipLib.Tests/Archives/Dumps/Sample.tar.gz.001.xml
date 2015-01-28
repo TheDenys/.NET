@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>Sample.tar</FileName>
+  <Format>Tar</Format>
+  <PackedSize>143360</PackedSize>
+  <UnPackedSize>124147</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>Sample.tar</Volume>
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>PingTunnel</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\CHANGELOG</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2839</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\LICENSE</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1550</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\Makefile</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>755</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\md5.c</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>12438</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\md5.h</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3396</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\ptunnel.8</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>4852</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\ptunnel.c</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>44237</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\ptunnel.h</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>10619</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\README</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>4405</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\web</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\web\index.html</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>19908</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\web\packet-format.png</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>4340</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>PingTunnel\web\setup.png</FileName>
+      <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>14808</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent>
+    <Archive>
+      <FileName>Sample.tar.gz</FileName>
+      <Format>GZip</Format>
+      <PackedSize>53433</PackedSize>
+      <UnPackedSize>53433</UnPackedSize>
+      <Password />
+      <IsEncrypted>false</IsEncrypted>
+      <HasSubArchive>true</HasSubArchive>
+      <Volumes>
+        <Volume>Sample.tar.gz</Volume>
+      </Volumes>
+      <Properties />
+      <Entries>
+        <Entry>
+          <FileName>Sample.tar</FileName>
+          <LastWriteTime>2005-05-26T11:06:24-04:00</LastWriteTime>
+          <CreationTime />
+          <LastAccessTime />
+          <Size>143360</Size>
+          <Crc>3097808124</Crc>
+          <Attributes />
+          <IsDirectory>false</IsDirectory>
+          <IsEncrypted>false</IsEncrypted>
+          <IsUntitled>false</IsUntitled>
+          <Comment />
+        </Entry>
+      </Entries>
+      <Parent>
+        <Archive>
+          <FileName>Sample.tar.gz.001</FileName>
+          <Format>Split</Format>
+          <PackedSize>53433</PackedSize>
+          <UnPackedSize>53433</UnPackedSize>
+          <Password />
+          <IsEncrypted>false</IsEncrypted>
+          <HasSubArchive>true</HasSubArchive>
+          <Volumes>
+            <Volume>Sample.tar.gz.001</Volume>
+            <Volume>Sample.tar.gz.002</Volume>
+            <Volume>Sample.tar.gz.003</Volume>
+          </Volumes>
+          <Properties>
+            <Property Name="Volumes">3</Property>
+          </Properties>
+          <Entries>
+            <Entry>
+              <FileName>Sample.tar.gz</FileName>
+              <LastWriteTime />
+              <CreationTime />
+              <LastAccessTime />
+              <Size>53433</Size>
+              <Crc>0</Crc>
+              <Attributes />
+              <IsDirectory>false</IsDirectory>
+              <IsEncrypted>false</IsEncrypted>
+              <IsUntitled>false</IsUntitled>
+              <Comment />
+            </Entry>
+          </Entries>
+          <Parent />
+        </Archive>
+      </Parent>
+    </Archive>
+  </Parent>
+</Archive>

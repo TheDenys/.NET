@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName />
+  <Format>Cpio</Format>
+  <PackedSize>25600</PackedSize>
+  <UnPackedSize>21265</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume />
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>cpiosize</FileName>
+      <LastWriteTime>1990-08-28T23:08:29-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3436</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>cpiosize.1</FileName>
+      <LastWriteTime>1990-08-28T22:56:57-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3596</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>cpiosize.c</FileName>
+      <LastWriteTime>1990-08-28T23:07:51-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>8264</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>cpiosize.man</FileName>
+      <LastWriteTime>1990-08-28T23:06:27-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>4245</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>Makefile</FileName>
+      <LastWriteTime>1990-08-28T23:03:04-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>576</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>README</FileName>
+      <LastWriteTime>1990-08-28T23:04:01-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1148</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName />
+  <Format>Rar</Format>
+  <PackedSize>7000</PackedSize>
+  <UnPackedSize>53480</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume />
+  </Volumes>
+  <Properties>
+    <Property Name="Solid">false</Property>
+    <Property Name="Blocks">1</Property>
+    <Property Name="Multivolume">true</Property>
+    <Property Name="Volumes">1</Property>
+    <Property Name="Physical Size" />
+  </Properties>
+  <Entries>
+    <Entry>
+      <FileName>src\arib_std_b25.c</FileName>
+      <LastWriteTime>2008-01-11T22:20:16-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>53480</Size>
+      <Crc>1829574286</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

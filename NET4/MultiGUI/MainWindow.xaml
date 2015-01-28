@@ -1,0 +1,14 @@
+﻿<Window x:Class="MultiGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="350" Width="525">
+  <Grid>
+    <Canvas Height="200" HorizontalAlignment="Left" Name="canvasMain" VerticalAlignment="Top" Width="350">
+              <Rectangle Canvas.Left="0" Canvas.Top="5" Width="30" Height="10" Fill="Blue" Name="rectangle1"></Rectangle>
+        <Rectangle Canvas.Left="0" Canvas.Top="20" Width="30" Height="10" Fill="Yellow" Name="rectangle2"></Rectangle>
+        <Rectangle Canvas.Left="0" Canvas.Top="35" Width="30" Height="10" Fill="Green" Name="rectangle3"></Rectangle>
+        <Rectangle Canvas.Left="0" Canvas.Top="50" Width="30" Height="10" Fill="Magenta" Name="rectangle4"></Rectangle>
+    </Canvas>
+    <Button Content="Draw" Height="23" HorizontalAlignment="Left" Margin="355,0,0,0" Name="btnDraw" VerticalAlignment="Top" Width="75" Click="btnDraw_Click" />
+  </Grid>
+</Window>

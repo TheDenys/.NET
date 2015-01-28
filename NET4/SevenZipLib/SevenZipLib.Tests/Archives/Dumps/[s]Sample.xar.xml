@@ -1,0 +1,1057 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName />
+  <Format>Xar</Format>
+  <PackedSize>190021</PackedSize>
+  <UnPackedSize>717618</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume />
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>[TOC].xml</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>57890</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2</FileName>
+      <LastWriteTime>2007-12-29T13:50:34-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:50:34-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\cfghdrs.stamp.in</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>6</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\cfgoutputs.stamp.in</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>6</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\config.guess</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>43499</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\config.sub</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>31743</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\configure</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>272176</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\configure.ac</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>9930</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\include</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\include\config.h.in</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>733</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\include\xar.h.in</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>8163</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\INSTALL</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>4322</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\install-sh</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>5585</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\appledouble.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>3395</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\archive.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>37885</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\archive.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>3827</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\arcmod.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>3584</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\arcmod.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2366</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\asprintf.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2762</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\b64.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>7107</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\b64.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>322</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\bzxar.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>6465</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\bzxar.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2166</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\darwinattr.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>20329</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\darwinattr.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2092</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\data.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>7061</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\data.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2039</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\ea.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2020</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\ea.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>440</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\err.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2739</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\ext2.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>7610</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\ext2.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2020</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\fbsdattr.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>9830</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\fbsdattr.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2006</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\filetree.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>31198</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\filetree.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>4514</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\hash.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>7108</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\hash.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2402</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\io.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>15593</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\io.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>3074</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\libxar.la.in.in</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>756</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\linuxattr.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>7436</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\linuxattr.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2012</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\macho.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>13756</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\macho.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2295</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\Makefile.inc.in</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>5534</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\script.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2992</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\script.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>1864</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\signature.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>12925</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\signature.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2448</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\stat.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>19716</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\stat.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2183</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\subdoc.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>6346</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\subdoc.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2480</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\util.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>4453</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\util.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2202</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\zxar.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>6328</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\lib\zxar.h</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2163</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\LICENSE</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>1627</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\Makefile.in</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2317</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\Mk</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\src</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\src\Makefile.inc.in</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>1759</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\src\xar.1</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>3505</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\src\xar.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>21382</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\attr</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>1681</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\buffer.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>1532</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\checksums</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2299</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\compression</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>1740</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\data</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>3364</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\data.xsl</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>234</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\functions</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>987</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\hardlink</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>662</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\heap</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>1636</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\heap1.xsl</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>498</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\test\validate.c</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>3654</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\TODO</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>122</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>xar-1.5.2\xar.spec.in</FileName>
+      <LastWriteTime>2007-12-29T13:49:57-05:00</LastWriteTime>
+      <CreationTime>2007-12-29T13:49:57-05:00</CreationTime>
+      <LastAccessTime>2007-12-29T13:50:53-05:00</LastAccessTime>
+      <Size>2613</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

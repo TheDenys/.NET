@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName />
+  <Format>Swfc</Format>
+  <PackedSize>2748</PackedSize>
+  <UnPackedSize>3312</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume />
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>[Untitled Entry]</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3312</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>true</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

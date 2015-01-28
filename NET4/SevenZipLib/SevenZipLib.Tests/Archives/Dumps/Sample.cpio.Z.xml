@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>Sample.cpio</FileName>
+  <Format>Cpio</Format>
+  <PackedSize>40960</PackedSize>
+  <UnPackedSize>38892</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>Sample.cpio</Volume>
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>.</FileName>
+      <LastWriteTime>1990-02-08T19:57:01-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>bugs.c</FileName>
+      <LastWriteTime>1990-02-07T23:51:34-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1172</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>bugs.h</FileName>
+      <LastWriteTime>1990-02-07T23:51:36-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2998</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>game.c</FileName>
+      <LastWriteTime>1990-02-07T23:51:38-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3608</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>init.c</FileName>
+      <LastWriteTime>1990-02-07T23:51:39-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1580</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>Makefile</FileName>
+      <LastWriteTime>1990-02-07T23:56:52-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>540</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>move.c</FileName>
+      <LastWriteTime>1990-02-07T23:51:41-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3066</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>NOTES</FileName>
+      <LastWriteTime>1990-02-07T23:51:31-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>728</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>README</FileName>
+      <LastWriteTime>1990-02-07T23:51:33-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2384</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>score.c</FileName>
+      <LastWriteTime>1990-02-07T23:51:42-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1219</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>shot.c</FileName>
+      <LastWriteTime>1990-02-07T23:51:44-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3428</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>sprites.c</FileName>
+      <LastWriteTime>1990-02-07T23:51:47-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>16148</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>stars.c</FileName>
+      <LastWriteTime>1990-02-07T23:51:49-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>616</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>window.c</FileName>
+      <LastWriteTime>1990-02-07T23:51:50-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1405</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent>
+    <Archive>
+      <FileName>Sample.cpio.Z</FileName>
+      <Format>Z</Format>
+      <PackedSize>14607</PackedSize>
+      <UnPackedSize>14604</UnPackedSize>
+      <Password />
+      <IsEncrypted>false</IsEncrypted>
+      <HasSubArchive>true</HasSubArchive>
+      <Volumes>
+        <Volume>Sample.cpio.Z</Volume>
+      </Volumes>
+      <Properties />
+      <Entries>
+        <Entry>
+          <FileName>Sample.cpio</FileName>
+          <LastWriteTime />
+          <CreationTime />
+          <LastAccessTime />
+          <Size>0</Size>
+          <Crc>0</Crc>
+          <Attributes />
+          <IsDirectory>false</IsDirectory>
+          <IsEncrypted>false</IsEncrypted>
+          <IsUntitled>false</IsUntitled>
+          <Comment />
+        </Entry>
+      </Entries>
+      <Parent />
+    </Archive>
+  </Parent>
+</Archive>

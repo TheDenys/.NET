@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName />
+  <Format>Pe</Format>
+  <PackedSize>82432</PackedSize>
+  <UnPackedSize>80994</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume />
+  </Volumes>
+  <Properties>
+    <Property Name="CPU">x64</Property>
+    <Property Name="64-bit">true</Property>
+    <Property Name="Characteristics">Executable DLL LargeAddress</Property>
+    <Property Name="Created">2009-12-22T03:17:59-05:00</Property>
+    <Property Name="Physical Size">82432</Property>
+    <Property Name="Headers Size">1024</Property>
+    <Property Name="Checksum">0</Property>
+    <Property Name="Image Size">98304</Property>
+    <Property Name="Section Alignment">4096</Property>
+    <Property Name="File Alignment">512</Property>
+    <Property Name="Code Size">48640</Property>
+    <Property Name="Initialized Data Size">34304</Property>
+    <Property Name="Uninitialized Data Size">0</Property>
+    <Property Name="Linker Version">8.0</Property>
+    <Property Name="OS Version">4.0</Property>
+    <Property Name="Image Version">0.0</Property>
+    <Property Name="Subsystem Version">5.2</Property>
+    <Property Name="Subsystem">Windows GUI</Property>
+    <Property Name="DLL Characteristics"></Property>
+    <Property Name="Stack Reserve">1048576</Property>
+    <Property Name="Stack Commit">4096</Property>
+    <Property Name="Heap Reserve">1048576</Property>
+    <Property Name="Heap Commit">4096</Property>
+    <Property Name="Image Base">268435456</Property>
+  </Properties>
+  <Entries>
+    <Entry>
+      <FileName>.data</FileName>
+      <LastWriteTime>2009-12-22T03:17:59-05:00</LastWriteTime>
+      <CreationTime>2009-12-22T03:17:59-05:00</CreationTime>
+      <LastAccessTime />
+      <Size>2688</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.pdata</FileName>
+      <LastWriteTime>2009-12-22T03:17:59-05:00</LastWriteTime>
+      <CreationTime>2009-12-22T03:17:59-05:00</CreationTime>
+      <LastAccessTime />
+      <Size>5052</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.rdata</FileName>
+      <LastWriteTime>2009-12-22T03:17:59-05:00</LastWriteTime>
+      <CreationTime>2009-12-22T03:17:59-05:00</CreationTime>
+      <LastAccessTime />
+      <Size>21666</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.reloc</FileName>
+      <LastWriteTime>2009-12-22T03:17:59-05:00</LastWriteTime>
+      <CreationTime>2009-12-22T03:17:59-05:00</CreationTime>
+      <LastAccessTime />
+      <Size>522</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.rsrc\MANIFEST\1</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>514</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.rsrc\string.txt</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1420</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.rsrc\VERSION\1</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>724</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.text</FileName>
+      <LastWriteTime>2009-12-22T03:17:59-05:00</LastWriteTime>
+      <CreationTime>2009-12-22T03:17:59-05:00</CreationTime>
+      <LastAccessTime />
+      <Size>48467</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

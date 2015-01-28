@@ -1,0 +1,12 @@
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\bin\Debug\LongPathBrowser.exe
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\bin\Debug\LongPathBrowser.pdb
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\bin\Debug\Microsoft.Experimental.IO.dll
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\bin\Debug\Microsoft.Experimental.IO.pdb
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\bin\Debug\Microsoft.Experimental.IO.xml
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\obj\Debug\ResolveAssemblyReference.cache
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\obj\Debug\LongPathSamples.LongPathBrowserForm.resources
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\obj\Debug\LongPathBrowser.Properties.Resources.resources
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\obj\Debug\GenerateResource.read.1.tlog
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\obj\Debug\GenerateResource.write.1.tlog
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\obj\Debug\LongPathBrowser.exe
+c:\PDN\PROJECTS\LongPaths\Microsoft.Experimental.IO\LongPathBrowser\obj\Debug\LongPathBrowser.pdb

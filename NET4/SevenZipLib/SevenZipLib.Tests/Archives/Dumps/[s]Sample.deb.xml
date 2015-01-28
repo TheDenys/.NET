@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>data.tar</FileName>
+  <Format>Tar</Format>
+  <PackedSize>61440</PackedSize>
+  <UnPackedSize>38786</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>data.tar</Volume>
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>.</FileName>
+      <LastWriteTime>2002-07-24T03:03:36-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr</FileName>
+      <LastWriteTime>2002-07-24T03:03:35-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\bin</FileName>
+      <LastWriteTime>2002-07-24T03:03:36-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\bin\gxvattr</FileName>
+      <LastWriteTime>2002-07-24T03:03:36-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>18692</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\bin\xvattr</FileName>
+      <LastWriteTime>2002-07-24T03:03:36-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>14920</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\sbin</FileName>
+      <LastWriteTime>2002-07-24T03:03:34-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share</FileName>
+      <LastWriteTime>2002-07-24T03:03:35-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\doc</FileName>
+      <LastWriteTime>2002-07-24T03:03:35-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\doc\xvattr</FileName>
+      <LastWriteTime>2002-07-24T03:03:38-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\doc\xvattr\changelog.Debian.gz</FileName>
+      <LastWriteTime>2002-07-24T02:57:47-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>200</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\doc\xvattr\changelog.gz</FileName>
+      <LastWriteTime>2001-12-11T06:00:31-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>187</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\doc\xvattr\copyright</FileName>
+      <LastWriteTime>2002-07-24T02:57:47-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>191</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\doc\xvattr\NEWS</FileName>
+      <LastWriteTime>2002-06-13T15:31:37-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>218</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\doc\xvattr\README</FileName>
+      <LastWriteTime>2001-12-11T06:00:31-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>981</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\doc\xvattr\README.debian</FileName>
+      <LastWriteTime>2002-07-24T02:57:47-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>158</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\man</FileName>
+      <LastWriteTime>2002-07-24T03:03:35-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\man\man1</FileName>
+      <LastWriteTime>2002-07-24T03:03:38-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>.\usr\share\man\man1\xvattr.1.gz</FileName>
+      <LastWriteTime>2002-07-24T03:03:35-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3239</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent>
+    <Archive>
+      <FileName>data.tar.gz</FileName>
+      <Format>GZip</Format>
+      <PackedSize>17050</PackedSize>
+      <UnPackedSize>17050</UnPackedSize>
+      <Password />
+      <IsEncrypted>false</IsEncrypted>
+      <HasSubArchive>true</HasSubArchive>
+      <Volumes>
+        <Volume>data.tar.gz</Volume>
+      </Volumes>
+      <Properties />
+      <Entries>
+        <Entry>
+          <FileName>data.tar</FileName>
+          <LastWriteTime />
+          <CreationTime />
+          <LastAccessTime />
+          <Size>61440</Size>
+          <Crc>3866695064</Crc>
+          <Attributes />
+          <IsDirectory>false</IsDirectory>
+          <IsEncrypted>false</IsEncrypted>
+          <IsUntitled>false</IsUntitled>
+          <Comment />
+        </Entry>
+      </Entries>
+      <Parent>
+        <Archive>
+          <FileName />
+          <Format>Deb</Format>
+          <PackedSize>18228</PackedSize>
+          <UnPackedSize>18036</UnPackedSize>
+          <Password />
+          <IsEncrypted>false</IsEncrypted>
+          <HasSubArchive>true</HasSubArchive>
+          <Volumes>
+            <Volume />
+          </Volumes>
+          <Properties>
+            <Property Name="Physical Size">18228</Property>
+          </Properties>
+          <Entries>
+            <Entry>
+              <FileName>control.tar.gz</FileName>
+              <LastWriteTime>2002-07-24T04:13:57-04:00</LastWriteTime>
+              <CreationTime />
+              <LastAccessTime />
+              <Size>986</Size>
+              <Crc>0</Crc>
+              <Attributes />
+              <IsDirectory>false</IsDirectory>
+              <IsEncrypted>false</IsEncrypted>
+              <IsUntitled>false</IsUntitled>
+              <Comment />
+            </Entry>
+            <Entry>
+              <FileName>data.tar.gz</FileName>
+              <LastWriteTime>2002-07-24T04:13:57-04:00</LastWriteTime>
+              <CreationTime />
+              <LastAccessTime />
+              <Size>17050</Size>
+              <Crc>0</Crc>
+              <Attributes />
+              <IsDirectory>false</IsDirectory>
+              <IsEncrypted>false</IsEncrypted>
+              <IsUntitled>false</IsUntitled>
+              <Comment />
+            </Entry>
+          </Entries>
+          <Parent />
+        </Archive>
+      </Parent>
+    </Archive>
+  </Parent>
+</Archive>

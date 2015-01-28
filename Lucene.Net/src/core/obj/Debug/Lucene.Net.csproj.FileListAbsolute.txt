@@ -1,0 +1,9 @@
+C:\PDN\PROJECTS\Lucene.Net\build\bin\core\Debug\NET40\Lucene.Net.dll
+C:\PDN\PROJECTS\Lucene.Net\build\bin\core\Debug\NET40\Lucene.Net.pdb
+C:\PDN\PROJECTS\Lucene.Net\src\core\obj\Debug\ResolveAssemblyReference.cache
+C:\PDN\PROJECTS\Lucene.Net\src\core\obj\Debug\Lucene.Net.dll
+C:\PDN\PROJECTS\Lucene.Net\src\core\obj\Debug\Lucene.Net.pdb
+F:\VS2013TMP\tmpVS2013console\PROJECTS\Lucene.Net\build\bin\core\Debug\NET40\Lucene.Net.dll
+F:\VS2013TMP\tmpVS2013console\PROJECTS\Lucene.Net\build\bin\core\Debug\NET40\Lucene.Net.pdb
+F:\VS2013TMP\tmpVS2013console\PROJECTS\Lucene.Net\src\core\obj\Debug\Lucene.Net.dll
+F:\VS2013TMP\tmpVS2013console\PROJECTS\Lucene.Net\src\core\obj\Debug\Lucene.Net.pdb

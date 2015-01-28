@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>0.fat</FileName>
+  <Format>Fat</Format>
+  <PackedSize>1048576</PackedSize>
+  <UnPackedSize>95240</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>0.fat</Volume>
+  </Volumes>
+  <Properties>
+    <Property Name="File System">FAT12</Property>
+    <Property Name="Cluster Size">512</Property>
+    <Property Name="Physical Size">1048576</Property>
+    <Property Name="Free Space">924672</Property>
+    <Property Name="Headers Size">25600</Property>
+    <Property Name="Modified">2010-03-28T14:58:36-04:00</Property>
+    <Property Name="Label">FATVOLUME</Property>
+    <Property Name="FATs" />
+    <Property Name="Sector Size">512</Property>
+    <Property Name="ID">682296133</Property>
+  </Properties>
+  <Entries>
+    <Entry>
+      <FileName>arib_std_b25.sln</FileName>
+      <LastWriteTime>2007-11-25T17:02:12-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>arib_std_b25.vcproj</FileName>
+      <LastWriteTime>2007-11-25T17:20:46-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>readme.txt</FileName>
+      <LastWriteTime>2008-01-11T01:42:20-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src</FileName>
+      <LastWriteTime>2010-03-28T14:12:04-04:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.44-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\arib_std_b25.c</FileName>
+      <LastWriteTime>2008-01-11T22:20:16-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.44-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\arib_std_b25.h</FileName>
+      <LastWriteTime>2007-11-25T16:42:46-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.44-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\arib_std_b25_error_code.h</FileName>
+      <LastWriteTime>2007-11-24T00:26:36-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.44-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\b_cas_card.c</FileName>
+      <LastWriteTime>2008-01-11T00:50:42-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\b_cas_card.h</FileName>
+      <LastWriteTime>2007-11-21T16:21:20-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\b_cas_card_error_code.h</FileName>
+      <LastWriteTime>2007-11-24T23:03:50-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\makefile.win</FileName>
+      <LastWriteTime>2007-11-25T17:18:40-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\multi2.c</FileName>
+      <LastWriteTime>2007-11-25T21:03:50-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\multi2.h</FileName>
+      <LastWriteTime>2007-11-24T00:24:46-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\multi2_error_code.h</FileName>
+      <LastWriteTime>2007-11-24T18:36:18-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\portable.h</FileName>
+      <LastWriteTime>2007-11-08T23:58:42-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>src\td.c</FileName>
+      <LastWriteTime>2008-01-11T01:42:54-05:00</LastWriteTime>
+      <CreationTime>2010-03-28T14:58:42.45-04:00</CreationTime>
+      <LastAccessTime>2010-03-28T00:00:00-04:00</LastAccessTime>
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent>
+    <Archive>
+      <FileName>[Untitled SubArchive]</FileName>
+      <Format>Mbr</Format>
+      <PackedSize>3355648</PackedSize>
+      <UnPackedSize>3290112</UnPackedSize>
+      <Password />
+      <IsEncrypted>false</IsEncrypted>
+      <HasSubArchive>true</HasSubArchive>
+      <Volumes>
+        <Volume>[Untitled SubArchive]</Volume>
+      </Volumes>
+      <Properties />
+      <Entries>
+        <Entry>
+          <FileName>0.fat</FileName>
+          <LastWriteTime />
+          <CreationTime />
+          <LastAccessTime />
+          <Size>1048576</Size>
+          <Crc>0</Crc>
+          <Attributes />
+          <IsDirectory>false</IsDirectory>
+          <IsEncrypted>false</IsEncrypted>
+          <IsUntitled>false</IsUntitled>
+          <Comment />
+        </Entry>
+        <Entry>
+          <FileName>1</FileName>
+          <LastWriteTime />
+          <CreationTime />
+          <LastAccessTime />
+          <Size>2241536</Size>
+          <Crc>0</Crc>
+          <Attributes />
+          <IsDirectory>false</IsDirectory>
+          <IsEncrypted>false</IsEncrypted>
+          <IsUntitled>false</IsUntitled>
+          <Comment />
+        </Entry>
+      </Entries>
+      <Parent>
+        <Archive>
+          <FileName />
+          <Format>Vhd</Format>
+          <PackedSize>3356160</PackedSize>
+          <UnPackedSize>3355648</UnPackedSize>
+          <Password />
+          <IsEncrypted>false</IsEncrypted>
+          <HasSubArchive>true</HasSubArchive>
+          <Volumes>
+            <Volume />
+          </Volumes>
+          <Properties>
+            <Property Name="Size" />
+            <Property Name="Created">2010-03-28T18:57:00-04:00</Property>
+            <Property Name="Cluster Size" />
+            <Property Name="Method">Fixed</Property>
+            <Property Name="Parent" />
+            <Property Name="Creator Application">win 6.1</Property>
+            <Property Name="Host OS">Windows</Property>
+            <Property Name="Saved State">false</Property>
+            <Property Name="ID">86FB75EA06A35E4DB9735B0C54529D9F</Property>
+          </Properties>
+          <Entries>
+            <Entry>
+              <FileName>[Untitled Entry]</FileName>
+              <LastWriteTime />
+              <CreationTime>2010-03-28T18:57:00-04:00</CreationTime>
+              <LastAccessTime />
+              <Size>3355648</Size>
+              <Crc>0</Crc>
+              <Attributes />
+              <IsDirectory>false</IsDirectory>
+              <IsEncrypted>false</IsEncrypted>
+              <IsUntitled>true</IsUntitled>
+              <Comment />
+            </Entry>
+          </Entries>
+          <Parent />
+        </Archive>
+      </Parent>
+    </Archive>
+  </Parent>
+</Archive>

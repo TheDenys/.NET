@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NPM Poller Template for the wireless module -->
+<PollingSchema module="NPM_Wireless" type="System" name="Meru" version="1.0">
+  <Device viewName="Wireless Controller" vendor="Meru" model="Meru" name="Meru" enabled="True" id="Wireless.Meru.Controller" deviceType="WirelessController" note="Meru Controller" excludeDiscovering="Wireless.Generic">
+
+    <Property name="AP_TotalBytesTxDiff" queryType="SQL" queryAccess="SqlDataValue" dataType="Float" propertyType="ControllerThinAP" hstAggregateFnc="SUM" keepHistory="True" saveToCache="True" />
+    <Property name="AP_TotalBytesRxDiff" queryType="SQL" queryAccess="SqlDataValue" dataType="Float" propertyType="ControllerThinAP" hstAggregateFnc="SUM" keepHistory="True" saveToCache="True" />
+    <Property name="AP_TotalBytesRxPerSec" queryType="SQL" queryAccess="SqlDataValue" dataType="Float" propertyType="ControllerThinAP" hstAggregateFnc="AVG#MIN,MAX" keepHistory="True" saveToCache="True" />
+    <Property name="AP_TotalBytesTxPerSec" queryType="SQL" queryAccess="SqlDataValue" dataType="Float" propertyType="ControllerThinAP" hstAggregateFnc="AVG#MIN,MAX" keepHistory="True" saveToCache="True" />
+    <Property name="WirelessType" queryType="SQL" queryAccess="SqlDataValue" dataType="String" propertyType="ControllerThinAP" hstAggregateFnc="MAX" keepHistory="True" saveToCache="True" />
+    <Property name="Controller" queryType="SQL" queryAccess="SqlDataValue" dataType="String" propertyType="ControllerThinAP" hstAggregateFnc="MAX" keepHistory="True" saveToCache="True" />
+    <Property name="ClientsCount" queryType="SQL" queryAccess="SqlDataValue" dataType="Integer" propertyType="ControllerThinAP" hstAggregateFnc="AVG#MIN,MAX" keepHistory="True" saveToCache="True" />
+
+
+    <Property name="Controller_ID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.1.1.18" queryAccess="GetNext" dataType="Integer" discover="True" propertyType="Controller" keepHistory="False" saveToCache="False" />
+    <Property name="ModelName" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.1.1.30" queryAccess="GetNext" dataType="String" discover="True" propertyType="Controller" keepHistory="False" saveToCache="True" parser="enum:MeruControllerHwType" />
+    <Property name="Controller_Name" queryType="SQL" queryContent="Caption" queryAccess="OrionNode" dataType="String" propertyType="Controller" keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" />
+    <Property name="Controller_IPAddress" queryType="SQL" queryContent="IP_Address" queryAccess="OrionNode" dataType="String" propertyType="Controller" keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" />
+
+    <Property name="AP_ID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.2.5.1.13" queryAccess="GetSubTree" dataType="Integer" propertyType="ControllerThinAP" keepHistory="False" saveToCache="False" table="mwApConnectivityTable" />
+    <Property name="AP_Name" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.2.5.1.14" queryAccess="GetSubTree" dataType="String" propertyType="ControllerThinAP" keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" table="mwApConnectivityTable" />
+    <Property name="IPAddress" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.2.5.1.24" queryAccess="GetSubTree" dataType="String" keepHistory="True" propertyType="ControllerThinAP" saveToCache="True" hstAggregateFnc="MAX" table="mwApConnectivityTable" />
+    <Property name="AP_RogueAP" queryType="SQL" queryAccess="SqlDataValue" dataType="Integer" propertyType="ControllerThinAP" hstAggregateFnc="AVG" keepHistory="True" saveToCache="True" />
+
+    <Property name="APConfig_ID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.2.1.1.4" queryAccess="GetSubTree" dataType="Integer" propertyType="ControllerThinAP" table="mwApTable" keepHistory="False" saveToCache="False" />
+    <Property name="APConfig_MAC" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.2.1.1.13" queryAccess="GetSubTree" dataType="String" propertyType="ControllerThinAP" parser="func: MACAddress" table="mwApTable" keepHistory="False" saveToCache="False" />
+
+    <Property name="EssProfile_SSID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.3.2.1.2" queryAccess="GetSubTree" dataType="String" keepHistory="False" propertyType="ControllerThinAP" saveToCache="False" table="mwEssTable" />
+    <Property name="EssProfile_ID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.3.2.1.3" queryAccess="GetSubTree" dataType="String" keepHistory="False" propertyType="ControllerThinAP" saveToCache="False" table="mwEssTable" />
+
+    <Property name="EssAP_APID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.3.4.1.5" queryAccess="GetSubTree" dataType="Integer" keepHistory="False" propertyType="ControllerThinAPInterface" saveToCache="False" table="mwEssAPTable" />
+    <Property name="EssAP_IFID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.3.4.1.3" queryAccess="GetSubTree" dataType="Integer" keepHistory="False" propertyType="ControllerThinAPInterface" saveToCache="False" table="mwEssAPTable" />
+    <Property name="EssAP_EssID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.3.4.1.2" queryAccess="GetSubTree" dataType="String" keepHistory="False" propertyType="ControllerThinAPInterface" saveToCache="False" table="mwEssAPTable" />
+
+    <Property name="Interface_IFID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.3.3.1.23" queryAccess="GetSubTree" dataType="Integer" keepHistory="False" propertyType="ControllerThinAPInterface" saveToCache="False" table="mwIf80211Table" />
+    <Property name="Interface_APID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.3.3.1.24" queryAccess="GetSubTree" dataType="Integer" keepHistory="False" propertyType="ControllerThinAPInterface" saveToCache="False" table="mwIf80211Table" />
+    <Property name="RadioType" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.3.3.1.2" queryAccess="GetSubTree" dataType="String" propertyType="ControllerThinAPInterface"  hstAggregateFnc="MAX" parser="enum:MeruApIfMode" keepHistory="True" saveToCache="True" table="mwIf80211Table" />
+    <Property name="CurrentChannel" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.3.3.1.5" queryAccess="GetSubTree" dataType="Integer" propertyType="ControllerThinAPInterface" hstAggregateFnc="MAX" keepHistory="True" saveToCache="True" table="mwIf80211Table" />
+    <Property name="Clients" queryType="SQL" queryAccess="SqlDataValue" dataType="Integer" keepHistory="True" propertyType="ControllerThinAPInterface" saveToCache="True" hstAggregateFnc="AVG" />
+    <Property name="MACAddress" queryType="SQL" queryAccess="SqlDataValue" dataType="String" propertyType="ControllerThinAPInterface" keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" />
+    <Property name="SSID" queryType="SQL" queryAccess="SqlDataValue" dataType="String" propertyType="ControllerThinAPInterface" keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" />
+
+
+    <Property name="Rogue_CurrentChannel" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.7.4.1.5" queryAccess="GetSubTree" dataType="Integer" propertyType="ControllerThinAPInterface" keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" table="mwRogueApListTable" />
+    <Property name="Rogue_SSID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.7.4.1.3" queryAccess="GetSubTree" dataType="String" propertyType="ControllerThinAPInterface" keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" table="mwRogueApListTable" />
+    <Property name="Rogue_MACAddress" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.7.4.1.2" queryAccess="GetSubTree" dataType="String" propertyType="ControllerThinAPInterface" keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" parser="func: MACAddress" table="mwRogueApListTable" />
+    <Property name="Rogue_RogueInterface" queryType="SQL" queryAccess="SqlDataValue" dataType="Integer" propertyType="ControllerThinAPInterface" hstAggregateFnc="AVG" keepHistory="True" saveToCache="True" table="mwRogueApListTable" />
+
+
+    <Property name="Client_APID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.9" queryAccess="GetSubTree" dataType="Integer" propertyType="ControllerThinAPInterfaceClient"  keepHistory="False" saveToCache="False" table="mwAPStationStatsTable" />
+    <Property name="Client_IFID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.5" queryAccess="GetSubTree" dataType="Integer" propertyType="ControllerThinAPInterfaceClient" keepHistory="False" saveToCache="False" table="mwAPStationStatsTable" />
+    <Property name="Client_TotalBytesTx" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.11" queryAccess="GetSubTree" dataType="BigInt" propertyType="ControllerThinAPInterfaceClient" keepHistory="False" saveToCache="True" table="mwAPStationStatsTable" />
+    <Property name="Client_TotalBytesRx" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.10" queryAccess="GetSubTree" dataType="BigInt" propertyType="ControllerThinAPInterfaceClient" keepHistory="False" saveToCache="True" table="mwAPStationStatsTable" />
+    <Property name="Client_TxRate" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.8" queryAccess="GetSubTree" dataType="String" propertyType="ControllerThinAPInterfaceClient" keepHistory="False" parser="format:{0} Mbps" saveToCache="True" table="mwAPStationStatsTable" />
+    <Property name="Client_RxRate" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.7" queryAccess="GetSubtree" dataType="String" propertyType="ControllerThinAPInterfaceClient" keepHistory="False" parser="format:{0} Mbps" saveToCache="True" table="mwAPStationStatsTable" />
+    <Property name="Client_TotalPacketsTx" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.13" queryAccess="GetSubTree" dataType="BigInt" propertyType="ControllerThinAPInterfaceClient" keepHistory="False" saveToCache="True" table="mwAPStationStatsTable" />
+    <Property name="Client_TotalPacketsRx" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.12" queryAccess="GetSubTree" dataType="BigInt" propertyType="ControllerThinAPInterfaceClient" keepHistory="False" saveToCache="True" table="mwAPStationStatsTable" />
+    <Property name="Client_IPAddress" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.17" queryAccess="GetSubtree" dataType="String" propertyType="ControllerThinAPInterfaceClient" keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" table="mwAPStationStatsTable" />
+    <Property name="Client_MAC" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.20" queryAccess="GetSubtree" dataType="String" propertyType="ControllerThinAPInterfaceClient" keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" parser="func: MACAddress" table="mwAPStationStatsTable" />
+    <Property name="Client_SSID" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.3.1.7.1.2" queryAccess="GetSubtree" dataType="String" propertyType="ControllerThinAPInterfaceClient" hstAggregateFnc="MAX" keepHistory="True" saveToCache="True" table="mwAPStationStatsTable" />
+    <Property name="Client_RDNS" queryType="SQL" queryAccess="SqlDataValue" dataType="String" propertyType="ControllerThinAPInterfaceClient" keepHistory="True" saveToCache="True" />
+
+
+    <Property name="Station_MAC" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.4.1.1.2" queryAccess="GetSubtree" dataType="String" propertyType="ControllerThinAPInterfaceClient" parser="func: MACAddress" table="mwStationTable" keepHistory="False" saveToCache="False" />
+    <Property name="Client_Name" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.4.1.1.8" queryAccess="GetSubTree" dataType="String" propertyType="ControllerThinAPInterfaceClient"  keepHistory="True" saveToCache="True" hstAggregateFnc="MAX" table="mwStationTable" />
+    <Property name="Client_SignalStrength" queryType="OID" queryContent="1.3.6.1.4.1.15983.1.1.4.4.1.1.12" queryAccess="GetSubTree" dataType="Integer" propertyType="ControllerThinAPInterfaceClient" hstAggregateFnc="AVG" keepHistory="True" saveToCache="True" table="mwStationTable" />
+
+
+    <Property name="Client_TotalBytesRxPerSec" queryType="SQL" queryAccess="SqlDataValue" dataType="Float" propertyType="ControllerThinAPInterfaceClient" suffIndex1="0" suffIndex2="0" keepHistory="True" saveToCache="True" hstAggregateFnc="AVG#MIN,MAX" />
+    <Property name="Client_TotalBytesTxPerSec" queryType="SQL" queryAccess="SqlDataValue" dataType="float" propertyType="ControllerThinAPInterfaceClient" suffIndex1="0" suffIndex2="0" keepHistory="True" saveToCache="True" hstAggregateFnc="AVG#MIN,MAX" />
+    <Property name="Client_TotalPacketsRxPerSec" queryType="SQL" queryAccess="SqlDataValue" dataType="float" propertyType="ControllerThinAPInterfaceClient" suffIndex1="0" suffIndex2="0" keepHistory="True" saveToCache="True" hstAggregateFnc="AVG#MIN,MAX" />
+    <Property name="Client_TotalPacketsTxPerSec" queryType="SQL" queryAccess="SqlDataValue" dataType="float" propertyType="ControllerThinAPInterfaceClient" suffIndex1="0" suffIndex2="0" keepHistory="True" saveToCache="True" hstAggregateFnc="AVG#MIN,MAX" />
+    <Property name="Client_TotalBytesRxDiff" queryType="SQL" queryAccess="SqlDataValue" dataType="Float" propertyType="ControllerThinAPInterfaceClient" suffIndex1="0" suffIndex2="0" keepHistory="True" saveToCache="True" hstAggregateFnc="SUM" />
+    <Property name="Client_TotalBytesTxDiff" queryType="SQL" queryAccess="SqlDataValue" dataType="float" propertyType="ControllerThinAPInterfaceClient" suffIndex1="0" suffIndex2="0" keepHistory="True" saveToCache="True" hstAggregateFnc="SUM" />
+    <Property name="Client_TotalPacketsRxDiff " queryType="SQL" queryAccess="SqlDataValue" dataType="float" propertyType="ControllerThinAPInterfaceClient" suffIndex1="0" suffIndex2="0" keepHistory="True" saveToCache="True" hstAggregateFnc="SUM" />
+    <Property name="Client_TotalPacketsTxDiff " queryType="SQL" queryAccess="SqlDataValue" dataType="float" propertyType="ControllerThinAPInterfaceClient" suffIndex1="0" suffIndex2="0" keepHistory="True" saveToCache="True" hstAggregateFnc="SUM" />
+
+  </Device>
+</PollingSchema>

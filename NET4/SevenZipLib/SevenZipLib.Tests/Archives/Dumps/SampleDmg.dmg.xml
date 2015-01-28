@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>SampleDmg.dmg</FileName>
+  <Format>Dmg</Format>
+  <PackedSize>38961</PackedSize>
+  <UnPackedSize>10036224</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>SampleDmg.dmg</Volume>
+  </Volumes>
+  <Properties>
+    <Property Name="Method">zero0[10]-1507K zero2[4]-7688K zlib[7]-605K-31K</Property>
+    <Property Name="Blocks">21</Property>
+  </Properties>
+  <Entries>
+    <Entry>
+      <FileName>0.ddm</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>512</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>Driver Descriptor Map (DDM : 0)</Comment>
+    </Entry>
+    <Entry>
+      <FileName>1.Apple_partition_map</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>32256</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>Apple (Apple_partition_map : 1)</Comment>
+    </Entry>
+    <Entry>
+      <FileName>2.hfs</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>9998336</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>disk image (Apple_HFS : 2)</Comment>
+    </Entry>
+    <Entry>
+      <FileName>3.free</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>5120</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment>(Apple_Free : 3)</Comment>
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

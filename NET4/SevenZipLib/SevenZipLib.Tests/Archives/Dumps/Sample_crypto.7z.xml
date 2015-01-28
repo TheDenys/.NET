@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>Sample_crypto.7z</FileName>
+  <Format>_7z</Format>
+  <PackedSize>18171</PackedSize>
+  <UnPackedSize>95240</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>Sample_crypto.7z</Volume>
+  </Volumes>
+  <Properties>
+    <Property Name="Method">LZMA2 7zAES</Property>
+    <Property Name="Solid">true</Property>
+    <Property Name="Blocks">1</Property>
+    <Property Name="Physical Size">18171</Property>
+    <Property Name="Headers Size">507</Property>
+    <Property Name="Offset" />
+  </Properties>
+  <Entries>
+    <Entry>
+      <FileName>crypto</FileName>
+      <LastWriteTime>2010-04-18T23:40:54-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\arib_std_b25.sln</FileName>
+      <LastWriteTime>2007-11-25T17:02:12-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>893</Size>
+      <Crc>3873002145</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\arib_std_b25.vcproj</FileName>
+      <LastWriteTime>2007-11-25T17:20:46-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>4949</Size>
+      <Crc>671717219</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\readme.txt</FileName>
+      <LastWriteTime>2008-01-11T01:42:20-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>6134</Size>
+      <Crc>2038191312</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src</FileName>
+      <LastWriteTime>2010-03-28T14:12:02-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\arib_std_b25.c</FileName>
+      <LastWriteTime>2008-01-11T22:20:16-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>53480</Size>
+      <Crc>3424717469</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\arib_std_b25.h</FileName>
+      <LastWriteTime>2007-11-25T16:42:46-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>700</Size>
+      <Crc>982860205</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\arib_std_b25_error_code.h</FileName>
+      <LastWriteTime>2007-11-24T00:26:36-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>644</Size>
+      <Crc>1735709375</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\b_cas_card.c</FileName>
+      <LastWriteTime>2008-01-11T00:50:42-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>8082</Size>
+      <Crc>623364338</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\b_cas_card.h</FileName>
+      <LastWriteTime>2007-11-21T16:21:20-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>702</Size>
+      <Crc>2128514841</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\b_cas_card_error_code.h</FileName>
+      <LastWriteTime>2007-11-24T23:03:50-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>468</Size>
+      <Crc>2489895309</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\makefile.win</FileName>
+      <LastWriteTime>2007-11-25T17:18:40-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>687</Size>
+      <Crc>2127485003</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\multi2.c</FileName>
+      <LastWriteTime>2007-11-25T21:03:50-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>12497</Size>
+      <Crc>4171834213</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\multi2.h</FileName>
+      <LastWriteTime>2007-11-24T00:24:46-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>698</Size>
+      <Crc>3760472483</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\multi2_error_code.h</FileName>
+      <LastWriteTime>2007-11-24T18:36:18-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>292</Size>
+      <Crc>2510514078</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\portable.h</FileName>
+      <LastWriteTime>2007-11-08T23:58:42-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>426</Size>
+      <Crc>2890877716</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>crypto\src\td.c</FileName>
+      <LastWriteTime>2008-01-11T01:42:54-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>4588</Size>
+      <Crc>3457922597</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>true</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

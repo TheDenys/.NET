@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>SampleNsis.exe</FileName>
+  <Format>Nsis</Format>
+  <PackedSize>376278</PackedSize>
+  <UnPackedSize>1011869</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>SampleNsis.exe</Volume>
+  </Volumes>
+  <Properties>
+    <Property Name="Method">LZMA:23</Property>
+    <Property Name="Solid">true</Property>
+  </Properties>
+  <Entries>
+    <Entry>
+      <FileName>$HWNDPARENT\Codecs\7zAES.dll</FileName>
+      <LastWriteTime>2006-05-14T00:22:54-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>12288</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Codecs\AES.dll</FileName>
+      <LastWriteTime>2006-05-14T00:22:54-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>29696</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Codecs\Branch.dll</FileName>
+      <LastWriteTime>2006-05-14T00:22:38-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>18944</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Codecs\BZip2.dll</FileName>
+      <LastWriteTime>2006-05-14T00:22:40-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>30720</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Codecs\Copy.dll</FileName>
+      <LastWriteTime>2006-05-14T00:22:42-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>5632</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Codecs\Deflate.dll</FileName>
+      <LastWriteTime>2006-05-14T00:22:42-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>28672</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Codecs\LZMA.dll</FileName>
+      <LastWriteTime>2006-05-14T00:22:46-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>49152</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Codecs\PPMd.dll</FileName>
+      <LastWriteTime>2006-05-14T00:22:48-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>26624</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Codecs\Rar29.dll</FileName>
+      <LastWriteTime>2006-05-14T00:22:52-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>46080</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Codecs\Swap.dll</FileName>
+      <LastWriteTime>2006-05-14T00:22:38-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>5632</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\7z.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:00-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>140288</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\arj.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:02-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>26112</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\bz2.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:02-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>22016</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\cab.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:06-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>44544</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\chm.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:08-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>40960</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\cpio.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:10-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>17408</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\deb.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:10-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>18432</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\gz.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:12-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>27136</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\iso.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:14-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>24576</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\lzh.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:16-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>26112</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\nsis.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:18-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>34816</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\rar.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:20-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>57856</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\rpm.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:22-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>12288</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\split.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:22-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>21504</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\tar.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:24-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>26624</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\z.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:26-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>14336</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$HWNDPARENT\Formats\zip.dll</FileName>
+      <LastWriteTime>2006-05-14T00:23:28-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$PLUGINSDIR\InstallOptions.dll</FileName>
+      <LastWriteTime />
+      <CreationTime />
+      <LastAccessTime />
+      <Size>12800</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$PLUGINSDIR\ioSpecial.ini</FileName>
+      <LastWriteTime>2006-06-18T18:08:46-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>183</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>$PLUGINSDIR\modern-wizard.bmp</FileName>
+      <LastWriteTime>2003-09-23T23:34:00-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>26494</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>7-ZipEng.hlf</FileName>
+      <LastWriteTime>2006-05-14T08:06:56-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2364</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>7-ZipEng.lng</FileName>
+      <LastWriteTime>2005-08-12T01:49:30-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1956</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>7-ZipFar.dll</FileName>
+      <LastWriteTime>2006-05-14T07:20:26-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>138752</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>7-ZipRus.hlf</FileName>
+      <LastWriteTime>2006-05-14T08:06:58-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2191</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>7-ZipRus.lng</FileName>
+      <LastWriteTime>2005-08-12T01:51:08-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1907</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>7zToFar.ini</FileName>
+      <LastWriteTime>2006-02-24T03:20:20-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2760</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>far7z.reg</FileName>
+      <LastWriteTime>2006-02-24T03:19:28-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2987</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>far7z.txt</FileName>
+      <LastWriteTime>2005-04-16T15:22:52-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2404</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

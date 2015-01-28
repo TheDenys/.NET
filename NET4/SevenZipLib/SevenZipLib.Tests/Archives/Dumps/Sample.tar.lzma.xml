@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>Sample.tar</FileName>
+  <Format>Tar</Format>
+  <PackedSize>61440</PackedSize>
+  <UnPackedSize>48355</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>Sample.tar</Volume>
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>aqbanking3-tool</FileName>
+      <LastWriteTime>2009-04-14T14:56:18-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>aqbanking3-tool\aqbanking3-tool.c</FileName>
+      <LastWriteTime>2009-04-07T15:28:20-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>25169</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>aqbanking3-tool\COPYING</FileName>
+      <LastWriteTime>2008-10-09T15:52:59-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>17733</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>aqbanking3-tool\Makefile</FileName>
+      <LastWriteTime>2008-10-26T13:08:49-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>269</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>aqbanking3-tool\xslt</FileName>
+      <LastWriteTime>2009-02-15T20:17:38-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>aqbanking3-tool\xslt\convert.xslt</FileName>
+      <LastWriteTime>2009-02-15T20:14:37-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3419</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>aqbanking3-tool\xslt\README.txt</FileName>
+      <LastWriteTime>2009-02-15T20:16:05-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1765</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent>
+    <Archive>
+      <FileName>Sample.tar.lzma</FileName>
+      <Format>lzma</Format>
+      <PackedSize>12716</PackedSize>
+      <UnPackedSize>12716</UnPackedSize>
+      <Password />
+      <IsEncrypted>false</IsEncrypted>
+      <HasSubArchive>true</HasSubArchive>
+      <Volumes>
+        <Volume>Sample.tar.lzma</Volume>
+      </Volumes>
+      <Properties />
+      <Entries>
+        <Entry>
+          <FileName>Sample.tar</FileName>
+          <LastWriteTime />
+          <CreationTime />
+          <LastAccessTime />
+          <Size>61440</Size>
+          <Crc>0</Crc>
+          <Attributes />
+          <IsDirectory>false</IsDirectory>
+          <IsEncrypted>false</IsEncrypted>
+          <IsUntitled>false</IsUntitled>
+          <Comment />
+        </Entry>
+      </Entries>
+      <Parent />
+    </Archive>
+  </Parent>
+</Archive>

@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>Sample.tar</FileName>
+  <Format>Tar</Format>
+  <PackedSize>212992</PackedSize>
+  <UnPackedSize>184925</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>Sample.tar</Volume>
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>news</FileName>
+      <LastWriteTime>1992-02-05T18:14:41-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>0</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>true</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\cancel.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:27-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1443</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\CHANGES</FileName>
+      <LastWriteTime>1992-02-05T18:10:20-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>9748</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\control.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:28-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>6340</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\DASHC</FileName>
+      <LastWriteTime>1992-02-05T18:10:19-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1367</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\dirconvert</FileName>
+      <LastWriteTime>1992-02-05T18:11:11-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>727</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\expire.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:31-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>4775</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\extern.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:35-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3013</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\fio.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:46-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>9107</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\header.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:48-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>11288</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\input.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:50-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>12102</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\local.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:51-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2477</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\local.h</FileName>
+      <LastWriteTime>1992-02-05T18:10:26-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>5065</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\local.h.safe</FileName>
+      <LastWriteTime>1992-02-05T18:10:25-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>4997</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\main.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:54-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>6715</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\makebits.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:55-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>6921</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\Makefile</FileName>
+      <LastWriteTime>1992-02-05T18:10:25-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1874</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\misc.c</FileName>
+      <LastWriteTime>1992-02-05T18:10:57-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>19089</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\news.1</FileName>
+      <LastWriteTime>1992-02-05T18:11:05-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>4157</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\news.daily</FileName>
+      <LastWriteTime>1992-02-05T18:11:13-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>796</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\news.install</FileName>
+      <LastWriteTime>1992-02-05T18:11:04-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1857</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\newscheck.1</FileName>
+      <LastWriteTime>1992-02-05T18:11:10-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>399</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\newscheck.c</FileName>
+      <LastWriteTime>1992-02-05T18:11:06-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1012</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\newsrec.c</FileName>
+      <LastWriteTime>1992-02-05T18:11:25-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3946</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\newsrecover.sh</FileName>
+      <LastWriteTime>1992-02-05T18:11:29-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>329</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\ngmap.c</FileName>
+      <LastWriteTime>1992-02-05T18:11:15-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>3162</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\NOTICE</FileName>
+      <LastWriteTime>1992-02-05T18:10:17-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1477</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\param.h</FileName>
+      <LastWriteTime>1992-02-05T18:10:27-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>4213</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\README.ms</FileName>
+      <LastWriteTime>1992-02-05T18:10:18-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>18321</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\readr.c</FileName>
+      <LastWriteTime>1992-02-05T18:11:02-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>17861</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\recnews.c</FileName>
+      <LastWriteTime>1992-02-05T18:11:18-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>5062</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\sublist</FileName>
+      <LastWriteTime>1992-02-05T18:10:22-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>8007</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\subscr.c</FileName>
+      <LastWriteTime>1992-02-05T18:11:03-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2853</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\TODO</FileName>
+      <LastWriteTime>1992-02-05T18:10:21-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2014</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>news\uurec.c</FileName>
+      <LastWriteTime>1992-02-05T18:11:08-05:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>2411</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent>
+    <Archive>
+      <FileName>Sample.tar.Z</FileName>
+      <Format>Z</Format>
+      <PackedSize>87783</PackedSize>
+      <UnPackedSize>87780</UnPackedSize>
+      <Password />
+      <IsEncrypted>false</IsEncrypted>
+      <HasSubArchive>true</HasSubArchive>
+      <Volumes>
+        <Volume>Sample.tar.Z</Volume>
+      </Volumes>
+      <Properties />
+      <Entries>
+        <Entry>
+          <FileName>Sample.tar</FileName>
+          <LastWriteTime />
+          <CreationTime />
+          <LastAccessTime />
+          <Size>0</Size>
+          <Crc>0</Crc>
+          <Attributes />
+          <IsDirectory>false</IsDirectory>
+          <IsEncrypted>false</IsEncrypted>
+          <IsUntitled>false</IsUntitled>
+          <Comment />
+        </Entry>
+      </Entries>
+      <Parent />
+    </Archive>
+  </Parent>
+</Archive>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName />
+  <Format>Vhd</Format>
+  <PackedSize>3146240</PackedSize>
+  <UnPackedSize>3145728</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume />
+  </Volumes>
+  <Properties>
+    <Property Name="Size" />
+    <Property Name="Created">2010-03-28T17:05:02-04:00</Property>
+    <Property Name="Cluster Size" />
+    <Property Name="Method">Fixed</Property>
+    <Property Name="Parent" />
+    <Property Name="Creator Application">win 6.1</Property>
+    <Property Name="Host OS">Windows</Property>
+    <Property Name="Saved State">false</Property>
+    <Property Name="ID">412D00ADCAAA5D4E96ADDBF8E55AB0BA</Property>
+  </Properties>
+  <Entries>
+    <Entry>
+      <FileName>[Untitled Entry]</FileName>
+      <LastWriteTime />
+      <CreationTime>2010-03-28T17:05:02-04:00</CreationTime>
+      <LastAccessTime />
+      <Size>3145728</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>true</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent />
+</Archive>

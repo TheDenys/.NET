@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenZipLib", "SevenZipLib\SevenZipLib.csproj", "{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenZipLib.Tests", "SevenZipLib.Tests\SevenZipLib.Tests.csproj", "{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CB64D2EA-2872-43F7-A0D8-5DC9EE505FF5}"
+	ProjectSection(SolutionItems) = preProject
+		32BitRun.testsettings = 32BitRun.testsettings
+		64BitRun.testsettings = 64BitRun.testsettings
+		SevenZipLib.vsmdi = SevenZipLib.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs02.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SevenZipLib\\SevenZipLib.csproj
+		SccProjectName1 = SevenZipLib
+		SccLocalPath1 = SevenZipLib
+		SccProjectUniqueName2 = SevenZipLib.Tests\\SevenZipLib.Tests.csproj
+		SccProjectName2 = SevenZipLib.Tests
+		SccLocalPath2 = SevenZipLib.Tests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SevenZipLib.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B05D17BC-8A2B-482A-85BD-FF4B757E41BC}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8C89302D-B8CF-4F73-B53D-5C6AD58379CB}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

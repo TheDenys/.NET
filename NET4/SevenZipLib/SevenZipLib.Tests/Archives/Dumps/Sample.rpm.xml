@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <FileName>Sample.cpio</FileName>
+  <Format>Cpio</Format>
+  <PackedSize>20516</PackedSize>
+  <UnPackedSize>20126</UnPackedSize>
+  <Password />
+  <IsEncrypted>false</IsEncrypted>
+  <HasSubArchive>false</HasSubArchive>
+  <Volumes>
+    <Volume>Sample.cpio</Volume>
+  </Volumes>
+  <Properties />
+  <Entries>
+    <Entry>
+      <FileName>yum-utils.spec</FileName>
+      <LastWriteTime>2005-06-04T15:49:35-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>1985</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+    <Entry>
+      <FileName>yum-utils-0.2.tar.gz</FileName>
+      <LastWriteTime>2005-06-04T15:49:25-04:00</LastWriteTime>
+      <CreationTime />
+      <LastAccessTime />
+      <Size>18141</Size>
+      <Crc>0</Crc>
+      <Attributes />
+      <IsDirectory>false</IsDirectory>
+      <IsEncrypted>false</IsEncrypted>
+      <IsUntitled>false</IsUntitled>
+      <Comment />
+    </Entry>
+  </Entries>
+  <Parent>
+    <Archive>
+      <FileName>Sample.cpio.gz</FileName>
+      <Format>GZip</Format>
+      <PackedSize>19432</PackedSize>
+      <UnPackedSize>19432</UnPackedSize>
+      <Password />
+      <IsEncrypted>false</IsEncrypted>
+      <HasSubArchive>true</HasSubArchive>
+      <Volumes>
+        <Volume>Sample.cpio.gz</Volume>
+      </Volumes>
+      <Properties />
+      <Entries>
+        <Entry>
+          <FileName>Sample.cpio</FileName>
+          <LastWriteTime />
+          <CreationTime />
+          <LastAccessTime />
+          <Size>20516</Size>
+          <Crc>221845792</Crc>
+          <Attributes />
+          <IsDirectory>false</IsDirectory>
+          <IsEncrypted>false</IsEncrypted>
+          <IsUntitled>false</IsUntitled>
+          <Comment />
+        </Entry>
+      </Entries>
+      <Parent>
+        <Archive>
+          <FileName>Sample.rpm</FileName>
+          <Format>Rpm</Format>
+          <PackedSize>21467</PackedSize>
+          <UnPackedSize>19432</UnPackedSize>
+          <Password />
+          <IsEncrypted>false</IsEncrypted>
+          <HasSubArchive>true</HasSubArchive>
+          <Volumes>
+            <Volume>Sample.rpm</Volume>
+          </Volumes>
+          <Properties />
+          <Entries>
+            <Entry>
+              <FileName>Sample.cpio.gz</FileName>
+              <LastWriteTime />
+              <CreationTime />
+              <LastAccessTime />
+              <Size>19432</Size>
+              <Crc>0</Crc>
+              <Attributes />
+              <IsDirectory>false</IsDirectory>
+              <IsEncrypted>false</IsEncrypted>
+              <IsUntitled>false</IsUntitled>
+              <Comment />
+            </Entry>
+          </Entries>
+          <Parent />
+        </Archive>
+      </Parent>
+    </Archive>
+  </Parent>
+</Archive>
