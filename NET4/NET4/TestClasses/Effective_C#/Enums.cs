@@ -1,12 +1,13 @@
 ﻿using System;
 using PDNUtils.Help;
+using PDNUtils.Runner;
 using PDNUtils.Runner.Attributes;
 
 namespace NET4.EffectiveCSharp
 {
 
     [RunableClass]
-    internal class TrumEnum
+    internal class TrumEnum : RunableBase
     {
         private enum SomeEnum
         {
@@ -20,6 +21,17 @@ namespace NET4.EffectiveCSharp
             Foo = 1,
             Bar = 2,
             BooFar = 4
+        }
+
+        [Run(1)]
+        protected void FromString()
+        {
+            SomeEnum foo = SomeEnum.Foo;
+            string val = foo.ToString();
+            DebugFormat("val={0}.", val);
+            var tmp = (SomeEnum)Enum.Parse(typeof(SomeEnum), val, true);
+            DebugFormat("obj={0}", tmp);
+            DebugFormat("eq={0}", foo == tmp);
         }
 
         [Run(0)]

@@ -113,6 +113,8 @@
     <Compile Include="Euler\P046_GoldbachConjecture.cs" />
     <Compile Include="Euler\P051_PrimeReplacement.cs" />
     <Compile Include="Euler\P079_PasscodeDerivation.cs" />
+    <Compile Include="Euler\P092_SquareDigitChains.cs" />
+    <Compile Include="Euler\P097_LargeNonMersennePrime.cs" />
     <Compile Include="Euler\Unsolved_P443_GCD_sequence.cs" />
     <Compile Include="Euler\P001_Multiples_3_5.cs" />
     <Compile Include="Euler\P013_SumOf50DigitNumbers.cs" />

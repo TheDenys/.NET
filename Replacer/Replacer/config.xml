@@ -1,0 +1,4 @@
+<config>
+  <pattern prefix="[" suffix="]"/>
+  <pattern prefix="&quot;" suffix="&quot;"/>
+</config>

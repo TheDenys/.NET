@@ -78,18 +78,17 @@ namespace LightIndexer.Config
                             break;
                         case DirectoryType.DISK:
                             {
+                                _directory = _InitializeDirectory(directoryPath);
+
                                 // if path doesn't exist we create an empty index and close it
                                 // so we'll have pre-created index
                                 if (!System.IO.Directory.Exists(directoryPath))
                                 {
+                                    //this is empty intentionally, all the magic happens in usings
                                     using (_InitializeDirectory(directoryPath))
-                                    using (_InitializeWriter(_directory, GetAnalyzer(), true))
-                                    {
-                                        //this is empty intentionally, all the magic already happened in upper usings
-                                    }
+                                    using (_InitializeWriter(_directory, GetAnalyzer(), true)) ;
                                 }
 
-                                _directory = _InitializeDirectory(directoryPath);
                                 break;
                             }
                         default:

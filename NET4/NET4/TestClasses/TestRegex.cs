@@ -6,12 +6,13 @@ using System.Text.RegularExpressions;
 using System.Web;
 using log4net;
 using PDNUtils.Help;
+using PDNUtils.Runner;
 using PDNUtils.Runner.Attributes;
 
 namespace NET4.TestClasses
 {
     [RunableClass]
-    public class TestRegex
+    public class TestRegex : RunableBase
     {
 
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
@@ -19,7 +20,7 @@ namespace NET4.TestClasses
         [Run(0)]
         public static void TestReplaceNewLines()
         {
-            var r = "1"+Environment.NewLine+Environment.NewLine+"0sdfdsf sdsd "+Environment.NewLine+"5 5  5";
+            var r = "1" + Environment.NewLine + Environment.NewLine + "0sdfdsf sdsd " + Environment.NewLine + "5 5  5";
             ConsolePrint.print("'{0}' ==> '{1}'", r, Regex.Replace(Regex.Replace(r, "(\\n+)|(\\r+)|(\\s+)", " "), "\\s+", " "));
         }
 
@@ -350,7 +351,31 @@ namespace NET4.TestClasses
             return res;
         }
 
-        [Run(false)]
+        [Run(0)]
+        public void TestMatchDigits()
+        {
+            Regex r = new Regex(@"\d{4}", RegexOptions.Compiled|RegexOptions.CultureInvariant) ;
+
+            string s;
+
+            s = "1";
+            DebugFormat("{0}:{1}", s, r.IsMatch(s));
+            s = "12";
+            DebugFormat("{0}:{1}", s, r.IsMatch(s));
+            s = "1234";
+            DebugFormat("{0}:{1}", s, r.IsMatch(s));
+            DebugFormat("{0}:{1}", s, Regex.IsMatch(@"\d{4}",s));
+            s = "a1ee";
+            DebugFormat("{0}:{1}", s, r.IsMatch(s));
+            s = "1234-a";
+            DebugFormat("{0}:{1}", s, r.IsMatch(s));
+            s = "-1/234=";
+            DebugFormat("{0}:{1}", s, r.IsMatch(s));
+            s = "";
+            DebugFormat("{0}:{1}", s, r.IsMatch(s));
+        }
+
+        [Run(0)]
         public static void TestSearch()
         {
             FileInfo fi_res = new FileInfo("files.txt");
@@ -371,7 +396,7 @@ namespace NET4.TestClasses
             sw.Close();
         }
 
-        [Run(false)]
+        [Run(0)]
         public static void TestIEVer()
         {
             string data = "IE 5.5";

@@ -28,6 +28,7 @@ Note:
 There is AfterBuild event for Release configuration that does ILMerge against referenced dlls.
 
 TODO:
+- Add IGNORED_FOLDERS (for .svn, .ReSharper, etc.)
 - Use http://sevenziplib.codeplex.com/ for archives.
 - Unpack archive to temp file/memory depending on setting.
 - Add unittests
