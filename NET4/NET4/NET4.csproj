@@ -105,6 +105,7 @@
     <Compile Include="Euler\P008_GreatestProduct.cs" />
     <Compile Include="Euler\P010_SumOfPrimes.cs" />
     <Compile Include="Euler\P011_LargestProductInAGrid.cs" />
+    <Compile Include="Euler\P012_HighlyDivisableTriangularNumbers.cs" />
     <Compile Include="Euler\P014_Collatz.cs" />
     <Compile Include="Euler\P035_CircularPrimes.cs" />
     <Compile Include="Euler\P038_PandigitalMultiples.cs" />
@@ -116,6 +117,8 @@
     <Compile Include="Euler\P089_RomanNumerals.cs" />
     <Compile Include="Euler\P092_SquareDigitChains.cs" />
     <Compile Include="Euler\P097_LargeNonMersennePrime.cs" />
+    <Compile Include="Euler\P501_EightDivisors.cs" />
+    <Compile Include="Euler\Tests\CommonTests.cs" />
     <Compile Include="Euler\Unsolved_P443_GCD_sequence.cs" />
     <Compile Include="Euler\P001_Multiples_3_5.cs" />
     <Compile Include="Euler\P013_SumOf50DigitNumbers.cs" />
@@ -212,6 +215,9 @@
   <ItemGroup>
     <None Include="app.manifest" />
     <None Include="Resources\Sign-Error-icon.png" />
+    <Content Include="Euler\p079_keylog.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestClasses\NPM.Template.Meru.Controller.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

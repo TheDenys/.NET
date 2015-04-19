@@ -22,7 +22,7 @@ namespace NET4.Euler
             M = 1000,
         }
 
-        [Run(1)]
+        [Run(0)]
         public void SolveIt()
         {
             /*var roman = ToRoman(19);

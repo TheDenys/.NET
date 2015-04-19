@@ -23,7 +23,7 @@ namespace NET4.EffectiveCSharp
             BooFar = 4
         }
 
-        [Run(1)]
+        [Run(0)]
         protected void FromString()
         {
             SomeEnum foo = SomeEnum.Foo;

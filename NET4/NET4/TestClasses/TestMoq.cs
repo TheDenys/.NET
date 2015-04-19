@@ -35,7 +35,7 @@ namespace NET4.TestClasses
             fooMock.Verify(f=>f.Bar(), Times.Once());
 
             //var bar = new Mock<Bar>();
-            //bar.Setup(b => b.Result).Returns(28);
+            //bar.Setup(b => b.GetResult()).Returns(28);// fails, as method is non virtual
             //ConsolePrint.print("bar result:{0}", bar.Object.Result);
         }
     }
@@ -51,5 +51,10 @@ namespace NET4.TestClasses
     public class Bar
     {
         public int Result { get { return 1; } }
+
+        public int GetResult()
+        {
+            return 2;
+        }
     }
 }

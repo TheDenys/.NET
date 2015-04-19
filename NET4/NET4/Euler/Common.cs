@@ -88,6 +88,80 @@ namespace NET4.Euler
             return true;
         }
 
+        public static long CountDivisors(long n, int divisorsLimit = -1)
+        {
+            if (n == 1)
+                return 1;
+            if (n == 2)
+                return 2;
+            if (n == 3)
+                return 2;
+            if (n == 4)
+                return 3;
+            if (n == 5)
+                return 2;
+            if (n == 6)
+                return 4;
+            if (n == 7)
+                return 2;
+            if (n == 8)
+                return 4;
+            if (n == 9)
+                return 3;
+            if (n == 10)
+                return 4;
+            if (n == 11)
+                return 2;
+            if (n == 12)
+                return 6;
+
+            long divisorsCount = 2;// 1 and itself
+
+            if (n % 2 == 0)
+                divisorsCount += 2;// 2 and half of itself
+
+            if (n % 3 == 0)
+                divisorsCount += 2;// 2 and half of itself
+
+            if (n % 4 == 0)
+                divisorsCount += 2;// 2 and half of itself
+
+            //CancellationTokenSource cts = new CancellationTokenSource();
+
+            //try
+            //{
+            //    System.Threading.Tasks.Parallel.For(3, n / 2 - 1, new ParallelOptions { CancellationToken = cts.Token },
+            //        i =>
+            //        {
+            //            if (n % i == 0)
+            //                Interlocked.Increment(ref divisorsCount);
+
+            //            var buf = Interlocked.Read(ref divisorsCount);
+
+            //            if (divisorsLimit != -1 && buf > divisorsLimit)
+            //            {
+            //                cts.Cancel();
+            //            }
+            //        });
+            //}
+            //catch (OperationCanceledException) { }
+
+            //if (cts.IsCancellationRequested)
+            //    return -1;
+
+            var sqrt = Math.Sqrt(n);
+
+            for (long i = 5; i <= sqrt; i++)
+            {
+                divisorsCount += (n % i == 0) ? (i != sqrt) ? 2 : 1 : 0;
+
+                if (divisorsLimit != -1 && divisorsCount > divisorsLimit)
+                    return -1;
+            }
+
+            return divisorsCount;
+        }
+
         public static uint BinReverse(uint n)
         {
             uint v = n;
@@ -164,7 +238,7 @@ namespace NET4.Euler
             // 345 346 356
             // 456
 
-            var combinationsCount = Common.CombinationsCount(m, n);
+            var combinationsCount = CombinationsCount(m, n);
             //DebugFormat("combinations: {0}", combinations);
 
             var posArr = new int[m];
@@ -248,6 +322,11 @@ namespace NET4.Euler
                 }
             }
             return perm;
+        }
+
+        public static long GetSumOf(long n)
+        {
+            return n * (n + 1) / 2;
         }
     }
 }
