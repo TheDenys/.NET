@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
 
 namespace NET4.Euler
 {
@@ -8,6 +9,11 @@ namespace NET4.Euler
         public static int CountDigits(long n)
         {
             return (int)Math.Log10(n) + 1;
+        }
+
+        public static int CountDigits(BigInteger n)
+        {
+            return (int)BigInteger.Log10(n) + 1;
         }
 
         public static int[] GetDigits(int num)
@@ -231,7 +237,7 @@ namespace NET4.Euler
 
         public static IEnumerable<int[]> CombinationsMN(int m, int n)
         {
-            // sample n = 7, m =3
+            // sample m = 3, n = 7
             // 012 013 014 015 016 023 024 025 026 034 035 036 045 046 056
             // 123 124 125 126 134 135 136 145 146 156
             // 234 235 236 245 246 256
@@ -327,6 +333,28 @@ namespace NET4.Euler
         public static long GetSumOf(long n)
         {
             return n * (n + 1) / 2;
+        }
+
+        public static BigInteger Fib(int n)
+        {
+            if (n == 1)
+                return 1;
+
+            if (n == 2)
+                return 1;
+
+            BigInteger fibN_2 = 1;
+            BigInteger fibN_1 = 1;
+            BigInteger fib = 0;
+
+            for (int i = 3; i <= n; i++)
+            {
+                fib = fibN_1 + fibN_2;
+                fibN_2 = fibN_1;
+                fibN_1 = fib;
+            }
+
+            return fib;
         }
     }
 }
