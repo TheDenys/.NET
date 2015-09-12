@@ -73,6 +73,7 @@
     <Compile Include="Compare\ObjectArrayComparer.cs" />
     <Compile Include="Compare\StringArrayComparer.cs" />
     <Compile Include="Config\ProgramStateManager.cs" />
+    <Compile Include="Help\IListEqualityComparer.cs" />
     <Compile Include="Help\ConsolePrint.cs" />
     <Compile Include="Help\CryptHelper.cs" />
     <Compile Include="Help\CSVHelper.cs" />

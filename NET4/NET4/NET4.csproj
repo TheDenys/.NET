@@ -178,6 +178,7 @@
     <Compile Include="TestClasses\StopWatchHelper.cs" />
     <Compile Include="TestClasses\TestAsync.cs" />
     <Compile Include="TestClasses\TestClass.cs" />
+    <Compile Include="TestClasses\TestComplexKey.cs" />
     <Compile Include="TestClasses\TestDebuggerLaunch.cs" />
     <Compile Include="TestClasses\TestDelegates.cs" />
     <Compile Include="TestClasses\TestDialog.cs">
@@ -235,20 +236,6 @@
     <EmbeddedResource Include="TestData\TestMap.EOCMap" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibraryTest2\ClassLibraryTest2.csproj">
-      <Project>{61379DF3-EEFA-459A-A8C3-A49B5DB46F06}</Project>
-      <Name>ClassLibraryTest2</Name>
-      <Aliases>ClassLibraryTest2</Aliases>
-    </ProjectReference>
-    <ProjectReference Include="..\ClassLibraryTest\ClassLibraryTest.csproj">
-      <Project>{D064B42A-5C49-4673-A5F2-95A0438A6C1E}</Project>
-      <Name>ClassLibraryTest</Name>
-      <Aliases>ClassLibraryTest</Aliases>
-    </ProjectReference>
-    <ProjectReference Include="..\DirtyLib\DirtyLib.csproj">
-      <Project>{590BD467-D255-4EA6-A9BE-0B1518F61726}</Project>
-      <Name>DirtyLib</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PDNUtils\PDNUtils.csproj">
       <Project>{d3e6b222-76fe-486c-b3ed-d2173f61fd04}</Project>
       <Name>PDNUtils</Name>

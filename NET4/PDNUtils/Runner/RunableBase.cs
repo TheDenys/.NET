@@ -1,4 +1,4 @@
-﻿using System.Windows.Forms;
+﻿using System.Linq;
 
 namespace PDNUtils.Runner
 {
@@ -28,14 +28,14 @@ namespace PDNUtils.Runner
 
         protected void Debug(object message)
         {
-            if(MessageHandler!=null)
-                MessageHandler.Debug(message.ToString());
+            if (MessageHandler != null)
+                MessageHandler.Debug(Help.Utils.GetString(message));
         }
-        
+
         protected void DebugFormat(string format, params object[] messages)
         {
             if (MessageHandler != null)
-                MessageHandler.Debug(string.Format(format, messages));
+                MessageHandler.Debug(string.Format(format, messages.Select(Help.Utils.GetString).ToArray()));
         }
     }
 }

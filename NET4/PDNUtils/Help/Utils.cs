@@ -132,7 +132,7 @@ namespace PDNUtils.Help
         /// <param name="e">Exception.</param>
         /// <param name="indent">Optional parameter. String used for text indent.</param>
         /// <returns>String with as much details was possible to get from exception.</returns>
-        public static string GetExtendedexceptionDetails(object e, string indent = null)
+        public static string GetExtendedExceptionDetails(object e, string indent = null)
         {
             // we want to be robust when dealing with errors logging
             try
@@ -153,13 +153,13 @@ namespace PDNUtils.Help
                         if (e is FaultException && p.Name == "Detail")
                         {
                             sb.AppendLine(string.Format("{0}{1}:", indent, p.Name));
-                            sb.AppendLine(GetExtendedexceptionDetails(v, "  " + indent));// recursive call
+                            sb.AppendLine(GetExtendedExceptionDetails(v, "  " + indent));// recursive call
                         }
                         // Usually this is InnerException
                         else if (v is Exception)
                         {
                             sb.AppendLine(string.Format("{0}{1}:", indent, p.Name));
-                            sb.AppendLine(GetExtendedexceptionDetails(v as Exception, "  " + indent));// recursive call
+                            sb.AppendLine(GetExtendedExceptionDetails(v as Exception, "  " + indent));// recursive call
                         }
                         // some other property
                         else
@@ -195,5 +195,27 @@ namespace PDNUtils.Help
             }
         }
 
+        public static string GetString(object o)
+        {
+            return GetStringInternal(o);
+        }
+
+        private static string GetStringInternal(object o)
+        {
+            if (o == null) return "null";
+            if (o is string) return (string)o;
+            if (ReflectionHelper.HasToString(o)) return o.ToString();
+            if (o is IEnumerable) return GetStringInternal(o as IEnumerable);
+
+            return GetStringInternal(o);
+        }
+
+        private static string GetStringInternal(IEnumerable e)
+        {
+            StringBuilder sb = new StringBuilder("[");
+            sb.Append(string.Join(",", e.Cast<object>().Select(GetStringInternal)));
+            sb.Append("]");
+            return sb.ToString();
+        }
     }
 }

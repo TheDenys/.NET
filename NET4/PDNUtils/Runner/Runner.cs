@@ -41,7 +41,7 @@ namespace PDNUtils.Runner
             }
             catch (Exception e)
             {
-                var extendedexceptionDetails = PDNUtils.Help.Utils.GetExtendedexceptionDetails(e);
+                var extendedexceptionDetails = PDNUtils.Help.Utils.GetExtendedExceptionDetails(e);
                 log.ErrorFormat("Something failed: {0}", extendedexceptionDetails);
                 if (messageHandler != null)
                 {
@@ -113,7 +113,7 @@ namespace PDNUtils.Runner
                 if (e is ReflectionTypeLoadException)
                 {
                     var reflectionTypeLoadException = (e as ReflectionTypeLoadException);
-                    var details = string.Join(Environment.NewLine, reflectionTypeLoadException.LoaderExceptions.Select(ex => Help.Utils.GetExtendedexceptionDetails(ex)));
+                    var details = string.Join(Environment.NewLine, reflectionTypeLoadException.LoaderExceptions.Select(ex => Help.Utils.GetExtendedExceptionDetails(ex)));
                     log.ErrorFormat("Details: {0}", details);
                     var types = reflectionTypeLoadException.Types.Where(t => t != null).ToArray();
                     return types;

@@ -18,7 +18,6 @@ using System.Web;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.XPath;
-using DirtyLib;
 using Microsoft.Win32;
 using PDNUtils.Help;
 using PDNUtils.Runner;
@@ -964,7 +963,7 @@ namespace NET4.TestClasses
         [Run(0)]
         protected void TestObsolete()
         {
-            ObsoleteClass.Do();
+            //ObsoleteClass.Do();
         }
 
         [Run(0)]
@@ -1152,7 +1151,7 @@ namespace NET4.TestClasses
             }
             catch (Exception e)
             {
-                var extendedexceptionDetails = PDNUtils.Help.Utils.GetExtendedexceptionDetails(e);
+                var extendedexceptionDetails = PDNUtils.Help.Utils.GetExtendedExceptionDetails(e);
                 log.Error("Ordinary:", e);
                 log.ErrorFormat("ToString:{0}", e);
                 log.ErrorFormat("Detailed:{0}", extendedexceptionDetails);

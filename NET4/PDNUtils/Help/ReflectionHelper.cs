@@ -7,6 +7,7 @@ namespace PDNUtils.Help
 {
     public static class ReflectionHelper
     {
+        private static readonly Type[] EmptyTypesArray = { };
 
         public static object[] GetConstantValues<T>() where T : class
         {
@@ -64,6 +65,16 @@ namespace PDNUtils.Help
         private static object GetPropertyValue<T>(T obj, PropertyInfo p)
         {
             return p.GetValue(obj, BindingFlags.GetProperty, null, null, null);
+        }
+
+        public static bool HasToString(object o)
+        {
+            if (o == null) return false;
+            var oType = o.GetType();
+            var toStringMethodInfo = oType.GetMethod("ToString", BindingFlags.Instance | BindingFlags.ExactBinding | BindingFlags.Public, null, EmptyTypesArray, null);
+            if (toStringMethodInfo == null) return false;
+            Type toStringType = toStringMethodInfo.DeclaringType;
+            return oType == toStringType;
         }
     }
 

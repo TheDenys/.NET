@@ -21,5 +21,6 @@ C:\PDN\vm_writable_sandbox\VS2013TMP\tmpVS2013console\PROJECTS\ICSharpCode.Sharp
 d:\PDN\GITHUB\.NET\ICSharpCode.SharpZipLib\bin\Debug\ICSharpCode.SharpZipLib.dll
 d:\PDN\GITHUB\.NET\ICSharpCode.SharpZipLib\bin\Debug\ICSharpCode.SharpZipLib.pdb
 d:\PDN\GITHUB\.NET\ICSharpCode.SharpZipLib\bin\Debug\ICSharpCode.SharpZipLib.xml
+d:\PDN\GITHUB\.NET\ICSharpCode.SharpZipLib\src\obj\Debug\ICSharpCode.SharpZLib.csprojResolveAssemblyReference.cache
 d:\PDN\GITHUB\.NET\ICSharpCode.SharpZipLib\src\obj\Debug\ICSharpCode.SharpZipLib.dll
 d:\PDN\GITHUB\.NET\ICSharpCode.SharpZipLib\src\obj\Debug\ICSharpCode.SharpZipLib.pdb
