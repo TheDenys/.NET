@@ -78,7 +78,6 @@ namespace NET4.Euler
 
         public static bool IsPrime(long i)
         {
-            //TODO: get from pdf for task
             if (i == 1) return false;
             if (i < 4) return true;
             if (i % 2 == 0) return false;

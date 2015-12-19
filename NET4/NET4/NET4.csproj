@@ -109,6 +109,8 @@
     <Compile Include="Euler\P011_LargestProductInAGrid.cs" />
     <Compile Include="Euler\P012_HighlyDivisableTriangularNumbers.cs" />
     <Compile Include="Euler\P014_Collatz.cs" />
+    <Compile Include="Euler\P018_067_MaximumSumInTriangle.cs" />
+    <Compile Include="Euler\P027_QuadraticPrimes.cs" />
     <Compile Include="Euler\P035_CircularPrimes.cs" />
     <Compile Include="Euler\P038_PandigitalMultiples.cs" />
     <Compile Include="Euler\P032_ProductPandigital19.cs" />
@@ -117,6 +119,7 @@
     <Compile Include="Euler\P046_GoldbachConjecture.cs" />
     <Compile Include="Euler\P051_PrimeReplacement.cs" />
     <Compile Include="Euler\P079_PasscodeDerivation.cs" />
+    <Compile Include="Euler\P081_PathSumTwoWays.cs" />
     <Compile Include="Euler\P089_RomanNumerals.cs" />
     <Compile Include="Euler\P092_SquareDigitChains.cs" />
     <Compile Include="Euler\P097_LargeNonMersennePrime.cs" />

@@ -12,7 +12,7 @@ namespace NET4.TestClasses
     {
         private string[] arr;
 
-        [Run(1)]
+        [Run(0)]
         public void TestSome()
         {
             arr = new string[] { };
