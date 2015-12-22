@@ -16,11 +16,11 @@ namespace NET4.Euler
             return (int)BigInteger.Log10(n) + 1;
         }
 
-        public static int[] GetDigits(int num)
+        public static long[] GetDigits(long num)
         {
             var countDigits = CountDigits(num);
-            int[] digits = new int[countDigits];
-            int p = digits.Length - 1;
+            var digits = new long[countDigits];
+            var p = digits.Length - 1;
 
             while (num > 0)
             {
@@ -31,9 +31,9 @@ namespace NET4.Euler
             return digits;
         }
 
-        public static long GetNumber(IEnumerable<int> digits)
+        public static long GetNumber(IEnumerable<long> digits)
         {
-            int res = 0;
+            long res = 0;
 
             foreach (var digit in digits)
             {
@@ -43,15 +43,15 @@ namespace NET4.Euler
             return res;
         }
 
-        public static IEnumerable<int> GetRotations(int n)
+        public static IEnumerable<long> GetRotations(int n)
         {
             int c = CountDigits(n);
-            int[] digits = GetDigits(n);
+            long[] digits = GetDigits(n);
             int shift = 0;
 
             while (++shift < c)
             {
-                int res = 0;
+                long res = 0;
 
                 for (int i = shift; i < c + shift; i++)
                 {
@@ -354,6 +354,92 @@ namespace NET4.Euler
             }
 
             return fib;
+        }
+
+        /// <summary>
+        /// Item1 is the biggest prime for making primoral.
+        /// Item2 is the product of primes.
+        /// Item3 is the totient function value.
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        public static Tuple<int, long, double> Primorial(int n)
+        {
+            int prime = 0;
+            long product = 1;
+            double phi = 1;
+
+            for (int i = 2; i <= n; i++)
+            {
+                if (Common.IsPrime(i))
+                {
+                    prime = i;
+                    product *= i;
+                    phi *= 1d - 1d / i;
+                }
+            }
+
+            phi *= product;
+
+            return Tuple.Create(prime, product, phi);
+        }
+
+        public static long GCD(long a, long b)
+        {
+            long oldA, oldB;
+
+            while (true)
+            {
+                if (b == 0)
+                    return a;
+
+                oldA = a;
+                oldB = b;
+
+                a = b;
+                b = oldA % oldB;
+            }
+        }
+
+        public static Trampoline<long> GCDTrampoline(long a, long b)
+        {
+            if (b == 0)
+                return new Trampoline<long>(a);
+            return new Trampoline<long>(() => GCDTrampoline(b, a % b));
+        }
+
+        public static IEnumerable<long> Range(long start, long count)
+        {
+            long n = start;
+            long pos = 0;
+            while (pos++ < count)
+            {
+                yield return n++;
+            }
+        }
+    }
+
+    public class Trampoline<T>
+    {
+        private readonly T value;
+        private readonly Func<Trampoline<T>> continuation;
+
+        public Trampoline(T value) { this.value = value; }
+        public Trampoline(Func<Trampoline<T>> continuation) { this.continuation = continuation; }
+
+        public T Value
+        {
+            get
+            {
+                Trampoline<T> val = this;
+
+                while (val.continuation != null)
+                {
+                    val = val.continuation();
+                }
+
+                return val.value;
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ namespace NET4.Euler
 
             for (int multiplierMax = 2; multiplierMax <= 9; multiplierMax++)
             {
-                int[] numbers = new int[multiplierMax];
+                long[] numbers = new long[multiplierMax];
 
                 for (int multiplicant = 1; multiplicant <= 10000; multiplicant++)
                 {

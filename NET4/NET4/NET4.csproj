@@ -123,7 +123,10 @@
     <Compile Include="Euler\P089_RomanNumerals.cs" />
     <Compile Include="Euler\P092_SquareDigitChains.cs" />
     <Compile Include="Euler\P097_LargeNonMersennePrime.cs" />
+    <Compile Include="Euler\P243_Resilience.cs" />
     <Compile Include="Euler\P501_EightDivisors.cs" />
+    <Compile Include="Euler\P70_TotientPermutation.cs" />
+    <Compile Include="Euler\P69_TotientMaximum.cs" />
     <Compile Include="Euler\Tests\CommonTests.cs" />
     <Compile Include="Euler\Unsolved_P443_GCD_sequence.cs" />
     <Compile Include="Euler\P001_Multiples_3_5.cs" />

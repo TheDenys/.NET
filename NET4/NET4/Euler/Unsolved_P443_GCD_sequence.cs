@@ -1,5 +1,4 @@
-﻿using System;
-using PDNUtils.Runner;
+﻿using PDNUtils.Runner;
 using PDNUtils.Runner.Attributes;
 
 namespace NET4.Euler
@@ -20,42 +19,10 @@ namespace NET4.Euler
 
         private Trampoline<long> G(long n)
         {
-            if(n==4)
+            if (n == 4)
                 return new Trampoline<long>(13);
-            return new Trampoline<long>(G(n-1).Value+GCD(n, G(n-1).Value).Value);
-        } 
-
-        private Trampoline<long> GCD(long a, long b)
-        {
-            if (b == 0)
-                return new Trampoline<long>(a);
-            return new Trampoline<long>(() => GCD(b, a % b));
-        }
-
-
-    }
-
-    public class Trampoline<T>
-    {
-        private readonly T value;
-        private readonly Func<Trampoline<T>> continuation;
-
-        public Trampoline(T value) { this.value = value; }
-        public Trampoline(Func<Trampoline<T>> continuation) { this.continuation = continuation; }
-
-        public T Value
-        {
-            get
-            {
-                Trampoline<T> val = this;
-
-                while (val.continuation != null)
-                {
-                    val = val.continuation();
-                }
-
-                return val.value;
-            }
+            return new Trampoline<long>(G(n - 1).Value + Common.GCD(n, G(n - 1).Value));
         }
     }
+
 }

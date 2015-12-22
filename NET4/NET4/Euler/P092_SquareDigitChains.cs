@@ -12,17 +12,17 @@ namespace NET4.Euler
         [Run(0)]
         public void SolveIt()
         {
-            Func<int, int> getSquareSumOfDigits = (n) =>
+            Func<long, long> getSquareSumOfDigits = (n) =>
             {
                 var digits = Common.GetDigits(n).ToList();
-                var r = digits.Aggregate(0, (acc, el) => { return acc + (el * el); });
+                var r = digits.Aggregate(0l, (acc, el) => { return acc + (el * el); });
                 return r;
             };
 
-            Func<int, int, bool> unwind = (n, limit) =>
+            Func<long, int, bool> unwind = (n, limit) =>
             {
-                HashSet<int> hs = new HashSet<int>();
-                int t = n;
+                HashSet<long> hs = new HashSet<long>();
+                var t = n;
                 while (hs.Add(t = getSquareSumOfDigits(t)))
                     if (t == limit)
                         return true;

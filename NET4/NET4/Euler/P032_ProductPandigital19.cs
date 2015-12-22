@@ -14,7 +14,7 @@ namespace NET4.Euler
             ISet<int> prodSet = new SortedSet<int>();
 
             int multiplicant, multiplier, product;
-            int[] multiplicantDigits, multiplierDigits, prodDigits;
+            long[] multiplicantDigits, multiplierDigits, prodDigits;
 
             for (multiplicant = 2; multiplicant <= 98; multiplicant++)
             {
