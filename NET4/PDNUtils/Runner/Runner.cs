@@ -68,23 +68,25 @@ namespace PDNUtils.Runner
         {
             var typeGroups = (from assembly in System.AppDomain.CurrentDomain.GetAssemblies()
                               let types = (
-                                              from c in GetTypesSafe(assembly)
-                                              where
-                                                  (c.GetCustomAttributes(true).Where(attr => attr is RunableClass).Count() != 0)
-                                                  &&
-                                                  c.GetMethods(BindingFlags.Public | BindingFlags.NonPublic |
-                                                              BindingFlags.Static | BindingFlags.Instance)
-                                                 .Where(
-                                                     method =>
-                                                     method.GetCustomAttributes(true).Where(
-                                                         attr =>
-                                                         attr is RunAttribute &&
-                                                         ((RunAttribute)attr).Enabled).Count() != 0).Count() != 0
-                                              select c
-                                          )
+                                  from c in GetTypesSafe(assembly)
+                                  where
+                                      (c.GetCustomAttributes(true).Count(attr => attr is RunableClass) != 0 || typeof(RunableBase).IsAssignableFrom(c))
+                                      &&
+                                      c.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance)
+                                          .Count(
+                                              method =>
+                                                  method.GetCustomAttributes(true)
+                                                      .Count(
+                                                          attr =>
+                                                              attr is RunAttribute &&
+                                                              ((RunAttribute)attr).Enabled
+                                                      ) != 0
+                                          ) != 0
+                                  select c
+                                  )
                               where types.Count() > 0
                               group types by assembly.GetName().Name
-                             );
+                );
 
             foreach (var typeGroup in typeGroups)
             {

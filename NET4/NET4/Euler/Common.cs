@@ -16,22 +16,59 @@ namespace NET4.Euler
             return (int)BigInteger.Log10(n) + 1;
         }
 
-        public static long[] GetDigits(long num)
+        public static byte[] GetDigits(long num)
         {
             var countDigits = CountDigits(num);
-            var digits = new long[countDigits];
+            var digits = new byte[countDigits];
             var p = digits.Length - 1;
 
             while (num > 0)
             {
-                digits[p--] = num % 10;
+                digits[p--] = (byte)(num % 10);
                 num = num / 10;
             }
 
             return digits;
         }
 
-        public static long GetNumber(IEnumerable<long> digits)
+        public static byte[] GetDigits(BigInteger num)
+        {
+            var countDigits = CountDigits(num);
+            var digits = new byte[countDigits];
+            var p = digits.Length - 1;
+
+            while (num > 0)
+            {
+                BigInteger rem;
+                num = BigInteger.DivRem(num, 10, out rem);
+                digits[p--] = (byte)rem;
+            }
+
+            return digits;
+        }
+
+        public static long GetSumOfDigigits(BigInteger n)
+        {
+            long[] digits = new long[10];
+
+            BigInteger divResult = n;
+            BigInteger rem;
+
+            do
+            {
+                divResult = BigInteger.DivRem(divResult, 10, out rem);
+                digits[(int)rem]++;
+            } while (divResult > 0);
+
+            long sum = 0;
+
+            for (int i = 1; i < 10; i++)
+                sum += i * digits[i];
+
+            return sum;
+        }
+
+        public static long GetNumber(IEnumerable<byte> digits)
         {
             long res = 0;
 
@@ -46,7 +83,7 @@ namespace NET4.Euler
         public static IEnumerable<long> GetRotations(int n)
         {
             int c = CountDigits(n);
-            long[] digits = GetDigits(n);
+            byte[] digits = GetDigits(n);
             int shift = 0;
 
             while (++shift < c)
@@ -74,6 +111,27 @@ namespace NET4.Euler
             }
 
             return n == rev;
+        }
+
+        public static bool IsPermutation(long a, long b)
+        {
+            long[] digits = new long[10];
+
+            do
+            {
+                digits[a % 10]++;
+            } while ((a /= 10) > 0);
+
+            do
+            {
+                digits[b % 10]--;
+            } while ((b /= 10) > 0);
+
+            for (int i = 0; i < 10; i++)
+                if (digits[i] != 0)
+                    return false;
+
+            return true;
         }
 
         public static bool IsPrime(long i)
@@ -232,6 +290,15 @@ namespace NET4.Euler
                 return n * Fact(n - 1);
             }
             return 1;
+        }
+
+        public static BigInteger FactBig(int n)
+        {
+            if (n > 1)
+            {
+                return BigInteger.Multiply(n, FactBig(n - 1));
+            }
+            return BigInteger.One;
         }
 
         public static IEnumerable<int[]> CombinationsMN(int m, int n)

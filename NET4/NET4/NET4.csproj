@@ -110,6 +110,8 @@
     <Compile Include="Euler\P012_HighlyDivisableTriangularNumbers.cs" />
     <Compile Include="Euler\P014_Collatz.cs" />
     <Compile Include="Euler\P018_067_MaximumSumInTriangle.cs" />
+    <Compile Include="Euler\P019_CountingSundays.cs" />
+    <Compile Include="Euler\P020_FactorialDigitSum.cs" />
     <Compile Include="Euler\P027_QuadraticPrimes.cs" />
     <Compile Include="Euler\P035_CircularPrimes.cs" />
     <Compile Include="Euler\P038_PandigitalMultiples.cs" />
