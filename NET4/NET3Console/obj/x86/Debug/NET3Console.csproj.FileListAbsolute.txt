@@ -1,8 +1,0 @@
-C:\PDN\PROJECTS\NET4\NET3Console\bin\Debug\NET3Console.exe
-C:\PDN\PROJECTS\NET4\NET3Console\bin\Debug\NET3Console.pdb
-C:\PDN\PROJECTS\NET4\NET3Console\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\PDN\PROJECTS\NET4\NET3Console\obj\x86\Debug\NET3Console.exe
-C:\PDN\PROJECTS\NET4\NET3Console\obj\x86\Debug\NET3Console.pdb
-c:\PDN\PROJECTS\NET4\NET3Console\bin\Debug\NET3Console.exe.config
-c:\PDN\PROJECTS\NET4\NET3Console\bin\Debug\log4net.dll
-c:\PDN\PROJECTS\NET4\NET3Console\bin\Debug\log4net.xml
