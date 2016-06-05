@@ -6,7 +6,7 @@ using PDNUtils.Runner.Attributes;
 namespace NET4.Euler
 {
     [RunableClass]
-    public class P70_TotientPermutation : RunableBase
+    public class P070_TotientPermutation : RunableBase
     {
         [Run(0)]
         public void SolveIt()

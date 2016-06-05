@@ -151,6 +151,19 @@ namespace NET4.Euler
             return true;
         }
 
+        public static IEnumerable<long> GetPrimes(long limit)
+        {
+            long n = 2;
+
+            while (n <= limit)
+            {
+                if (Common.IsPrime(n))
+                    yield return n;
+
+                n++;
+            }
+        }
+
         public static long CountDivisors(long n, int divisorsLimit = -1)
         {
             if (n == 1)

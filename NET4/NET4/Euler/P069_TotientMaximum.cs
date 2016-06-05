@@ -5,7 +5,7 @@ using PDNUtils.Runner.Attributes;
 namespace NET4.Euler
 {
     [RunableClass]
-    public class P69_TotientMaximum : RunableBase
+    public class P069_TotientMaximum : RunableBase
     {
         [Run(0)]
         public void SolveIt()

@@ -113,6 +113,8 @@
     <Compile Include="Euler\P019_CountingSundays.cs" />
     <Compile Include="Euler\P020_FactorialDigitSum.cs" />
     <Compile Include="Euler\P021_AmicableNumbers.cs" />
+    <Compile Include="Euler\P022_NamesScores.cs" />
+    <Compile Include="Euler\P023_NonAbundantSums.cs" />
     <Compile Include="Euler\P027_QuadraticPrimes.cs" />
     <Compile Include="Euler\P035_CircularPrimes.cs" />
     <Compile Include="Euler\P038_PandigitalMultiples.cs" />
@@ -128,8 +130,8 @@
     <Compile Include="Euler\P097_LargeNonMersennePrime.cs" />
     <Compile Include="Euler\P243_Resilience.cs" />
     <Compile Include="Euler\P501_EightDivisors.cs" />
-    <Compile Include="Euler\P70_TotientPermutation.cs" />
-    <Compile Include="Euler\P69_TotientMaximum.cs" />
+    <Compile Include="Euler\P070_TotientPermutation.cs" />
+    <Compile Include="Euler\P069_TotientMaximum.cs" />
     <Compile Include="Euler\Tests\CommonTests.cs" />
     <Compile Include="Euler\Unsolved_P443_GCD_sequence.cs" />
     <Compile Include="Euler\P001_Multiples_3_5.cs" />
@@ -153,9 +155,7 @@
     <Compile Include="TestClasses\Effective_C#\Enums.cs" />
     <Compile Include="TestClasses\Effective_C#\ValueReference.cs" />
     <Compile Include="InterviewSnippets\FindBits.cs" />
-    <Compile Include="InterviewSnippets\Test.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="InterviewSnippets\Test.cs" />
     <Compile Include="InterviewSnippets\YieldTest.cs" />
     <Compile Include="PlayWithHash\FixedSizeHasMap.cs" />
     <Compile Include="PlayWithHash\UseHashMap.cs" />
@@ -170,9 +170,7 @@
     <Compile Include="TestClasses\Encrypt.cs" />
     <Compile Include="TestClasses\FileSearch.cs" />
     <Compile Include="TestClasses\FileWorker.cs" />
-    <Compile Include="TestClasses\FormsTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="TestClasses\FormsTest.cs" />
     <Compile Include="TestClasses\ImproperObjectConstruction.cs" />
     <Compile Include="TestClasses\LambdaExpressionsLinq.cs" />
     <Compile Include="TestClasses\LazyTest.cs" />
@@ -229,6 +227,9 @@
   <ItemGroup>
     <None Include="app.manifest" />
     <None Include="Resources\Sign-Error-icon.png" />
+    <Content Include="Euler\p022_names.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Euler\p079_keylog.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
