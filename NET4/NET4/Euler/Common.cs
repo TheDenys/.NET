@@ -151,9 +151,15 @@ namespace NET4.Euler
             return true;
         }
 
-        public static IEnumerable<long> GetPrimes(long limit)
+        /// <summary>
+        /// Returns prime numbers that are lower or equal to <paramref name="limit"/>.
+        /// </summary>
+        /// <param name="limit">The biggest number to check for primality.</param>
+        /// <param name="seed">The lowest number to check for primality.</param>
+        /// <returns>Collection of prime numbers.</returns>
+        public static IEnumerable<long> GetPrimes(long limit, long seed = 2)
         {
-            long n = 2;
+            long n = seed;
 
             while (n <= limit)
             {

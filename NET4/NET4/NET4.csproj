@@ -116,6 +116,7 @@
     <Compile Include="Euler\P022_NamesScores.cs" />
     <Compile Include="Euler\P023_NonAbundantSums.cs" />
     <Compile Include="Euler\P024_LexicographicPermutations.cs" />
+    <Compile Include="Euler\P026_ReciprocalCycles.cs" />
     <Compile Include="Euler\P027_QuadraticPrimes.cs" />
     <Compile Include="Euler\P035_CircularPrimes.cs" />
     <Compile Include="Euler\P038_PandigitalMultiples.cs" />
