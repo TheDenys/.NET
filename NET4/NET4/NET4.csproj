@@ -141,6 +141,9 @@
     <Compile Include="Euler\P048_Sum_x_pow_x.cs" />
     <Compile Include="Euler\P145_Reversible.cs" />
     <Compile Include="Euler\P255_HeronSquareRoot.cs" />
+    <Compile Include="MultiPatternSearch\MultiPatternSearch.cs" />
+    <Compile Include="MultiPatternSearch\MultiSearchTest.cs" />
+    <Compile Include="MultiPatternSearch\Node.cs" />
     <Compile Include="Parallel\AsyncAwaitTest.cs" />
     <Compile Include="Parallel\BarrierTest.cs" />
     <Compile Include="Parallel\CountDownEventTest.cs" />
