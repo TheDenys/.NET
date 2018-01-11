@@ -24,15 +24,35 @@ namespace NET4.MultiPatternSearch
                 new List<PatternElement>{new StringPatternElement("a0"),new WildcardPatternElement("x1"),new StringPatternElement("+b"),new WildcardPatternElement("x2")},
                 new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("-b"),new WildcardPatternElement("x2")},
                 new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("+b"),new WildcardPatternElement("x2")},
+                new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("-"),new WildcardPatternElement("x0")},
             });
 
             var input = "a00-b+bvv";
 
-            List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> results = new List<System.Tuple<NodesTree.Node, Dictionary<string, string>>>();
-            MultiPatternSearch.TraverseTreeAndCollectMatchingPatterns(root, input, 0, null, 0, new Dictionary<string, string>(), results);
+            List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> results = MultiPatternSearch.FindPatternsAndResolveWildcards(root, input);
+
+            var root2 = MultiPatternSearch.BuildTree(new List<List<PatternElement>> {
+                new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("-"),new WildcardPatternElement("x0")},
+            });
+
+            var input2 = "a-a";
+            var results2 = MultiPatternSearch.FindPatternsAndResolveWildcards(root2, input2);// should produce 1 result
+
+            var input3 = "a-b";
+            var results3 = MultiPatternSearch.FindPatternsAndResolveWildcards(root2, input3);// should produce 0 results
+
+            var root3 = MultiPatternSearch.BuildTree(new List<List<PatternElement>> {
+                new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("-"),new WildcardPatternElement("x1")},
+            });
+
+            var input4 = "a-a";
+            var results4 = MultiPatternSearch.FindPatternsAndResolveWildcards(root3, input4);// should produce 1 result
+
+            var input5 = "a-b";
+            var results5 = MultiPatternSearch.FindPatternsAndResolveWildcards(root3, input5);// should produce 0 results
         }
 
-        [Run(1)]
+        [Run(0)]
         public void TreeGo()
         {
             /* We have to make a copy of resolved collection to avoid mixing resolved values for patterns that have common prefix:
@@ -82,8 +102,7 @@ namespace NET4.MultiPatternSearch
             //           012345678
             var input = "a00-b+bvv";
 
-            List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> results = new List<System.Tuple<NodesTree.Node, Dictionary<string, string>>>();
-            MultiPatternSearch.TraverseTreeAndCollectMatchingPatterns(root, input, 0, null, 0, new Dictionary<string, string>(), results);
+            List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> results = MultiPatternSearch.FindPatternsAndResolveWildcards(root, input);
         }
     }
 }

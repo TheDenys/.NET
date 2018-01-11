@@ -8,6 +8,15 @@ namespace NET4.MultiPatternSearch
 {
     class MultiPatternSearch
     {
+        /// <summary>
+        /// Builds a tree from given collection of patterns. Patterns with common beginning are attached to the same node.
+        /// Patterns can contain arbitrary amount of wildcards. Wildcards are identified by name and can be used as constraints. E.g. pattern %x0%-%x0%, where %x0% is a wildcard, will match "a-a" but not "a-b".
+        /// Example:
+        ///  patterns: "abc" "abd" "ab*" will produce tree ('' ('ab' ('c' 'd' '*')))
+        /// The resulting tree can be used in <see cref="FindPatternsAndResolveWildcards(NodesTree.Node, string)"/>.
+        /// </summary>
+        /// <param name="collectionOfPatterns">Patterns</param>
+        /// <returns>Root node of the tree</returns>
         public static NodesTree.Node BuildTree(List<List<PatternElement>> collectionOfPatterns)
         {
             var root = NodesTree.BuildRootNode();
@@ -42,11 +51,11 @@ namespace NET4.MultiPatternSearch
         {
             Tuple<NodesTree.Node, int> nodeAndPosition = Tuple.Create(startNode, -1);
             var f = false;
-            FindNodeWithSameStartingPatternElements(startNode, patternElements, -1, ref f, ref nodeAndPosition);
+            FindNodeWithSameStartingPatternElementsRecursive(startNode, patternElements, -1, ref f, ref nodeAndPosition);
             return nodeAndPosition;
         }
 
-        private static void FindNodeWithSameStartingPatternElements(NodesTree.Node node, List<PatternElement> patternElements, int elementPosition, ref bool found, ref Tuple<NodesTree.Node, int> result)
+        private static void FindNodeWithSameStartingPatternElementsRecursive(NodesTree.Node node, List<PatternElement> patternElements, int elementPosition, ref bool found, ref Tuple<NodesTree.Node, int> result)
         {
             if (found) return;
             var nodeValue = node.Value;
@@ -79,7 +88,7 @@ namespace NET4.MultiPatternSearch
                     foreach (var child in node.Nodes)
                     {
                         if (found) break;
-                        FindNodeWithSameStartingPatternElements(child, patternElements, nextElementPosition, ref found, ref result);
+                        FindNodeWithSameStartingPatternElementsRecursive(child, patternElements, nextElementPosition, ref found, ref result);
                     }
 
                     // no further pattern parts have been found so this one is the last common part and we should return this node and position
@@ -104,13 +113,31 @@ namespace NET4.MultiPatternSearch
             }
         }
 
+        /// <summary>
+        /// Looks for terminating nodes that would correspond to patterns matching given input.
+        /// Example:
+        ///  patterns: "abc" "abd" "ab*" will -> tree ('' ('ab' ('c' 'd' '*')))
+        ///  input "abc" would return 2 results:
+        ///   for pattern "abc" with no wildcards
+        ///   for pattern "ab*" the wildcard value will be "c"
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> FindPatternsAndResolveWildcards(NodesTree.Node root, string input)
+        {
+            List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> results = new List<System.Tuple<NodesTree.Node, Dictionary<string, string>>>();
+            MultiPatternSearch.TraverseTreeAndCollectMatchingPatternsRecursive(root, input, 0, null, 0, new Dictionary<string, string>(), results);
+            return results;
+        }
+
         /* We have to make a copy of resolved collection to avoid mixing resolved values for patterns that have common prefix:
          * Example: 
          * input: a00-b+bvv
          * p1: a*-b*
          * p2: a*+b*
          */
-        public static void TraverseTreeAndCollectMatchingPatterns(NodesTree.Node node, string input, int pos, NodesTree.Node wcNode, int wcStart, Dictionary<string, string> resolvedWildcards, List<Tuple<NodesTree.Node, Dictionary<string, string>>> results)
+        private static void TraverseTreeAndCollectMatchingPatternsRecursive(NodesTree.Node node, string input, int pos, NodesTree.Node wcNode, int wcStart, Dictionary<string, string> resolvedWildcards, List<Tuple<NodesTree.Node, Dictionary<string, string>>> results)
         {
             var currentPattern = node.Value;
             var n = input.Length - 1;
@@ -127,11 +154,12 @@ namespace NET4.MultiPatternSearch
                 if (resolved)
                 {
                     var lastPatternPos = GetPositionOfPatternLastCharacter(input, resolvedWildcard, pos);
-                    success = nextPos != -1;
+                    success = lastPatternPos != -1;
                     nextPos = lastPatternPos + 1;
                 }
                 else
                 {
+                    // we want wildcard be a non-empty and non-slash, change this according to specific wildcard requirements
                     success = input[pos] != '/';
                     nextPos = pos + 1;
                 }
@@ -170,7 +198,7 @@ namespace NET4.MultiPatternSearch
                             rBuf.Add(wcNode.Value, resolvedValue);
                         }
 
-                        TraverseTreeAndCollectMatchingPatterns(childNode, input, nextPos, (isWildcard && !resolved) ? node : null, pos, rBuf, results);
+                        TraverseTreeAndCollectMatchingPatternsRecursive(childNode, input, nextPos, (isWildcard && !resolved) ? node : null, pos, rBuf, results);
                     }
                 }
 
@@ -190,12 +218,22 @@ namespace NET4.MultiPatternSearch
             }
         }
 
-        public static int GetPositionOfPatternLastCharacter(string input, string pattern, int pos)
+        /// <summary>
+        /// Finds a position of the first occurrence of given pattern in the input starting at given position.
+        ///  input: "aaaacmelab" pattern: "acme" position: 0 result: 6
+        ///  input: "aaaacmelab" pattern: "acme" position: 3 result: 6
+        ///  input: "aaaacmelab" pattern: "acme" position: 4 result: -1
+        /// </summary>
+        /// <param name="input">String that may contain a pattern</param>
+        /// <param name="pattern">Pattern to look for</param>
+        /// <param name="position">Start position where to look for pattern in the input.</param>
+        /// <returns>Position of the pattern last character if it was found, otherwise -1</returns>
+        public static int GetPositionOfPatternLastCharacter(string input, string pattern, int position)
         {
             var match = false;
             var n = input.Length - 1;
             var m = pattern.Length - 1;
-            var k = pos + m;
+            var k = position + m;
 
             while (k <= n)
             {
