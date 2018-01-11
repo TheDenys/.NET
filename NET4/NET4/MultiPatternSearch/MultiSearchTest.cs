@@ -18,11 +18,16 @@ namespace NET4.MultiPatternSearch
         public void TreeGo()
         {
             /* We have to make a copy of resolved collection to avoid mixing resolved values for patterns that have common prefix:
-             * a00000-b+bvvvvvv
+             * a00-b+bvv
              * 
-             * p1 a*-b*
-             * p2 a*+b*
+             * p1 a%x1%-b%x2%
+             * p2 a%x1%+b%x2%
              * 
+             * p3 a0%x1%-b%x2%
+             * p4 a0%x1%+b%x2%
+             * 
+             * p5 %x0%-b%x2%
+             * p6 %x0%+b%x2%
              * 
              */
 
@@ -30,15 +35,33 @@ namespace NET4.MultiPatternSearch
                 NodesTree.BuildStringNode("a",
                     NodesTree.BuildWildCardNode("x1",
                         NodesTree.BuildStringNode("-b",
-                            NodesTree.BuildWildCardNode("x2")),
+                            NodesTree.BuildWildCardNode("x2"))
+                        ,
                         NodesTree.BuildStringNode("+b",
                             NodesTree.BuildWildCardNode("x2"))
                     )
                 )
-                //, NodesTree.BuildStringNode("ab")
-                //, NodesTree.BuildStringNode("cd")
+                ,
+                NodesTree.BuildStringNode("a0",
+                    NodesTree.BuildWildCardNode("x1",
+                        NodesTree.BuildStringNode("-b",
+                            NodesTree.BuildWildCardNode("x2"))
+                        ,
+                        NodesTree.BuildStringNode("+b",
+                            NodesTree.BuildWildCardNode("x2"))
+                    )
+                )
+                ,
+                NodesTree.BuildWildCardNode("x0",
+                        NodesTree.BuildStringNode("-b",
+                            NodesTree.BuildWildCardNode("x2"))
+                        ,
+                        NodesTree.BuildStringNode("+b",
+                            NodesTree.BuildWildCardNode("x2"))
+                )
                 );
 
+            //           012345678
             var input = "a00-b+bvv";
 
             List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> results = new List<System.Tuple<NodesTree.Node, Dictionary<string, string>>>();

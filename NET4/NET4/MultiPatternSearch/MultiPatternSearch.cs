@@ -69,7 +69,8 @@ namespace NET4.MultiPatternSearch
                         // previous node was an unresolved wildcard so resolve it now
                         if (wcNode != null)
                         {
-                            var resolvedLength = nextPos - currentPattern.Length - 1;
+                            var patternStartPos = nextPos - currentPattern.Length;
+                            var resolvedLength = patternStartPos - wcStart;
                             if (resolvedLength < 1) throw new InvalidOperationException("Wildcard can't be matched to an empty string.");
                             var resolvedValue = input.Substring(wcStart, resolvedLength);
                             rBuf.Add(wcNode.Value, resolvedValue);
