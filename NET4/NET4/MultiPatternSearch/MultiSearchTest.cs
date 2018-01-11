@@ -15,6 +15,19 @@ namespace NET4.MultiPatternSearch
         }
 
         [Run(1)]
+        public void BuildTree()
+        {
+            var root = MultiPatternSearch.BuildTree(new List<List<PatternElement>> {
+                new List<PatternElement>{new StringPatternElement("a"),new WildcardPatternElement("x1"),new StringPatternElement("-b"),new WildcardPatternElement("x2")},
+                new List<PatternElement>{new StringPatternElement("a"),new WildcardPatternElement("x1"),new StringPatternElement("+b"),new WildcardPatternElement("x2")},
+                new List<PatternElement>{new StringPatternElement("a0"),new WildcardPatternElement("x1"),new StringPatternElement("-b"),new WildcardPatternElement("x2")},
+                new List<PatternElement>{new StringPatternElement("a0"),new WildcardPatternElement("x1"),new StringPatternElement("+b"),new WildcardPatternElement("x2")},
+                new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("-b"),new WildcardPatternElement("x2")},
+                new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("+b"),new WildcardPatternElement("x2")},
+            });
+        }
+
+        [Run(0)]
         public void TreeGo()
         {
             /* We have to make a copy of resolved collection to avoid mixing resolved values for patterns that have common prefix:
@@ -65,7 +78,7 @@ namespace NET4.MultiPatternSearch
             var input = "a00-b+bvv";
 
             List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> results = new List<System.Tuple<NodesTree.Node, Dictionary<string, string>>>();
-            MultiPatternSearch.TraverseTree(root, input, 0, null, 0, new Dictionary<string, string>(), results);
+            MultiPatternSearch.TraverseTreeAndCollectMatchingPatterns(root, input, 0, null, 0, new Dictionary<string, string>(), results);
         }
     }
 }

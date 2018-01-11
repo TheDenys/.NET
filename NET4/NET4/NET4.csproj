@@ -144,6 +144,7 @@
     <Compile Include="MultiPatternSearch\MultiPatternSearch.cs" />
     <Compile Include="MultiPatternSearch\MultiSearchTest.cs" />
     <Compile Include="MultiPatternSearch\Node.cs" />
+    <Compile Include="MultiPatternSearch\PatternElement.cs" />
     <Compile Include="Parallel\AsyncAwaitTest.cs" />
     <Compile Include="Parallel\BarrierTest.cs" />
     <Compile Include="Parallel\CountDownEventTest.cs" />

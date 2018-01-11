@@ -8,15 +8,102 @@ namespace NET4.MultiPatternSearch
 {
     class MultiPatternSearch
     {
+        public static NodesTree.Node BuildTree(List<List<PatternElement>> collectionOfPatterns)
+        {
+            var root = NodesTree.BuildRootNode();
+
+            foreach (var patternElements in collectionOfPatterns)
+            {
+                // find node with the same starting pattern parts
+                var nodeAndElementPosition = FindNodeWithSameStartingPatternElements(root, patternElements);
+                var node = nodeAndElementPosition.Item1;
+                // increase element position to the next one
+                var elementPosition = nodeAndElementPosition.Item2 + 1;
+
+                // attach remaining pattern parts to the node, if there are any
+                if (elementPosition < patternElements.Count - 1)
+                {
+                    var lastAddedNode = node;
+
+                    for (var pos = elementPosition; pos < patternElements.Count; pos++)
+                    {
+                        PatternElement currentElement = patternElements[pos];
+                        NodesTree.Node nodeToAdd = currentElement is WildcardPatternElement ? NodesTree.BuildWildCardNode(currentElement.Value) : NodesTree.BuildStringNode(currentElement.Value);
+                        lastAddedNode.Nodes.Add(nodeToAdd);
+                        lastAddedNode = nodeToAdd;
+                    }
+                }
+            }
+
+            return root;
+        }
+
+        private static Tuple<NodesTree.Node, int> FindNodeWithSameStartingPatternElements(NodesTree.Node startNode, List<PatternElement> patternElements)
+        {
+            Tuple<NodesTree.Node, int> nodeAndPosition = Tuple.Create(startNode, -1);
+            var f = false;
+            FindNodeWithSameStartingPatternElements(startNode, patternElements, -1, ref f, ref nodeAndPosition);
+            return nodeAndPosition;
+        }
+
+        private static void FindNodeWithSameStartingPatternElements(NodesTree.Node node, List<PatternElement> patternElements, int elementPosition, ref bool found, ref Tuple<NodesTree.Node, int> result)
+        {
+            if (found) return;
+            var nodeValue = node.Value;
+            var isRoot = nodeValue == "";
+            var valuesCorrespond = isRoot;
+            var nextElementPosition = elementPosition + 1;
+
+            if (!isRoot)
+            {
+                var currentElement = patternElements[elementPosition];
+                bool isWcNode = node.IsWildcard;
+                bool isWcPattern = currentElement is WildcardPatternElement;
+                var typesCorrespond = !(isWcNode ^ isWcPattern);// negated XOR, i.e. logical biconditional returns true only if both operands are the same
+                valuesCorrespond = typesCorrespond && nodeValue == currentElement.Value;
+            }
+
+            if (valuesCorrespond)
+            {
+                // check if this is the last position in pattern
+                // yes: set finish to true and mark node as able to terminate
+                if (elementPosition == patternElements.Count - 1)
+                {
+                    found = true;
+                    node.CanTerminate = true;
+                    result = Tuple.Create(node, elementPosition);
+                }
+                // no: check child nodes with further elements of the pattern
+                else
+                {
+                    foreach (var child in node.Nodes)
+                    {
+                        if (found) break;
+                        FindNodeWithSameStartingPatternElements(child, patternElements, nextElementPosition, ref found, ref result);
+                    }
+                }
+            }
+        }
+
+        private static bool NodeTypeCorrespondsPatternElement(NodesTree.Node node, PatternElement patternElement)
+        {
+            if (patternElement is WildcardPatternElement)
+            {
+                return node.IsWildcard;
+            }
+            else
+            {
+                return !node.IsWildcard;
+            }
+        }
+
         /* We have to make a copy of resolved collection to avoid mixing resolved values for patterns that have common prefix:
-         * a00000-b+bvvvvvv
-         * 
-         * p1 a*-b*
-         * p2 a*+b*
-         * 
-         * 
+         * Example: 
+         * input: a00-b+bvv
+         * p1: a*-b*
+         * p2: a*+b*
          */
-        public static void TraverseTree(NodesTree.Node node, string input, int pos, NodesTree.Node wcNode, int wcStart, Dictionary<string, string> resolvedWildcards, List<Tuple<NodesTree.Node, Dictionary<string, string>>> results)
+        public static void TraverseTreeAndCollectMatchingPatterns(NodesTree.Node node, string input, int pos, NodesTree.Node wcNode, int wcStart, Dictionary<string, string> resolvedWildcards, List<Tuple<NodesTree.Node, Dictionary<string, string>>> results)
         {
             var currentPattern = node.Value;
             var n = input.Length - 1;
@@ -76,7 +163,7 @@ namespace NET4.MultiPatternSearch
                             rBuf.Add(wcNode.Value, resolvedValue);
                         }
 
-                        TraverseTree(childNode, input, nextPos, (isWildcard && !resolved) ? node : null, pos, rBuf, results);
+                        TraverseTreeAndCollectMatchingPatterns(childNode, input, nextPos, (isWildcard && !resolved) ? node : null, pos, rBuf, results);
                     }
                 }
 
