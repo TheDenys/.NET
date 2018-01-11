@@ -81,6 +81,13 @@ namespace NET4.MultiPatternSearch
                         if (found) break;
                         FindNodeWithSameStartingPatternElements(child, patternElements, nextElementPosition, ref found, ref result);
                     }
+
+                    // no further pattern parts have been found so this one is the last common part and we should return this node and position
+                    if (!found)
+                    {
+                        found = true;
+                        result = Tuple.Create(node, elementPosition);
+                    }
                 }
             }
         }

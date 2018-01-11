@@ -22,6 +22,8 @@ namespace NET4.MultiPatternSearch
         public StringPatternElement(string value) : base(value)
         {
         }
+
+        public override string ToString() => $"[{Value}]";
     }
 
     class WildcardPatternElement : PatternElement
@@ -29,5 +31,7 @@ namespace NET4.MultiPatternSearch
         public WildcardPatternElement(string name) : base(name)
         {
         }
+
+        public override string ToString() => $"%{Value}%";
     }
 }

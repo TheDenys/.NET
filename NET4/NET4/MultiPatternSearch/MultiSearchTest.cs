@@ -25,9 +25,14 @@ namespace NET4.MultiPatternSearch
                 new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("-b"),new WildcardPatternElement("x2")},
                 new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("+b"),new WildcardPatternElement("x2")},
             });
+
+            var input = "a00-b+bvv";
+
+            List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> results = new List<System.Tuple<NodesTree.Node, Dictionary<string, string>>>();
+            MultiPatternSearch.TraverseTreeAndCollectMatchingPatterns(root, input, 0, null, 0, new Dictionary<string, string>(), results);
         }
 
-        [Run(0)]
+        [Run(1)]
         public void TreeGo()
         {
             /* We have to make a copy of resolved collection to avoid mixing resolved values for patterns that have common prefix:
