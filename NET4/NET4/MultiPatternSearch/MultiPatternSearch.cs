@@ -30,7 +30,7 @@ namespace NET4.MultiPatternSearch
                 var elementPosition = nodeAndElementPosition.Item2 + 1;
 
                 // attach remaining pattern parts to the node, if there are any
-                if (elementPosition < patternElements.Count - 1)
+                if (elementPosition < patternElements.Count)
                 {
                     var lastAddedNode = node;
 
