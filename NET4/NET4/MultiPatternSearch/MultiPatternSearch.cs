@@ -186,25 +186,14 @@ namespace NET4.MultiPatternSearch
                 {
                     foreach (var childNode in node.Nodes)
                     {
-                        var rBuf = new Dictionary<string, string>(resolvedWildcards);
-
-                        // previous node was an unresolved wildcard so resolve it now
-                        if (wcNode != null)
-                        {
-                            var patternStartPos = nextPos - currentPattern.Length;
-                            var resolvedLength = patternStartPos - wcStart;
-                            if (resolvedLength < 1) throw new InvalidOperationException("Wildcard can't be matched to an empty string.");
-                            var resolvedValue = input.Substring(wcStart, resolvedLength);
-                            rBuf.Add(wcNode.Value, resolvedValue);
-                        }
-
+                        var rBuf = ResolveOptions(input, wcNode, wcStart, resolvedWildcards, nextPos, currentPattern.Length);
                         TraverseTreeAndCollectMatchingPatternsRecursive(childNode, input, nextPos, (isWildcard && !resolved) ? node : null, pos, rBuf, results);
                     }
                 }
 
                 if (node.CanTerminate)
                 {
-                    var rBuf = new Dictionary<string, string>(resolvedWildcards);
+                    var rBuf = ResolveOptions(input, wcNode, wcStart, resolvedWildcards, nextPos, currentPattern.Length);
 
                     // current node is an unresolved wildcard, so resolve it
                     if (isWildcard && !resolved)
@@ -216,6 +205,24 @@ namespace NET4.MultiPatternSearch
                     results.Add(Tuple.Create(node, rBuf));
                 }
             }
+        }
+
+        private static Dictionary<string, string> ResolveOptions(string input, NodesTree.Node wcNode, int wcStart, Dictionary<string, string> resolvedWildcards, int nextPos, int currentPatternLength)
+        {
+            // we should return copy of dictionary to not affect results for patterns with same prefix
+            var rBuf = new Dictionary<string, string>(resolvedWildcards);
+
+            // previous node was an unresolved wildcard so resolve it now
+            if (wcNode != null)
+            {
+                var patternStartPos = nextPos - currentPatternLength;
+                var resolvedLength = patternStartPos - wcStart;
+                if (resolvedLength < 1) throw new InvalidOperationException("Wildcard can't be matched to an empty string.");
+                var resolvedValue = input.Substring(wcStart, resolvedLength);
+                rBuf.Add(wcNode.Value, resolvedValue);
+            }
+
+            return rBuf;
         }
 
         /// <summary>

@@ -14,7 +14,7 @@ namespace NET4.MultiPatternSearch
             patternLastPos = MultiPatternSearch.GetPositionOfPatternLastCharacter("aaaacmelab", "acme", 4);// expect -1
         }
 
-        [Run(1)]
+        [Run(0)]
         public void BuildTree()
         {
             var root = MultiPatternSearch.BuildTree(new List<List<PatternElement>> {
@@ -25,6 +25,7 @@ namespace NET4.MultiPatternSearch
                 new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("-b"),new WildcardPatternElement("x2")},
                 new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("+b"),new WildcardPatternElement("x2")},
                 new List<PatternElement>{new WildcardPatternElement("x0"),new StringPatternElement("-"),new WildcardPatternElement("x0")},
+                new List<PatternElement>{new StringPatternElement("a"),new WildcardPatternElement("x0"),new StringPatternElement("vv")},
             });
 
             var input = "a00-b+bvv";
@@ -52,7 +53,7 @@ namespace NET4.MultiPatternSearch
             var results5 = MultiPatternSearch.FindPatternsAndResolveWildcards(root3, input5);// should produce 0 results
         }
 
-        [Run(0)]
+        [Run(1)]
         public void TreeGo()
         {
             /* We have to make a copy of resolved collection to avoid mixing resolved values for patterns that have common prefix:
@@ -70,32 +71,37 @@ namespace NET4.MultiPatternSearch
              */
 
             var root = NodesTree.BuildRootNode(
+                //NodesTree.BuildStringNode("a",
+                //    NodesTree.BuildWildCardNode("x1",
+                //        NodesTree.BuildStringNode("-b",
+                //            NodesTree.BuildWildCardNode("x2"))
+                //        ,
+                //        NodesTree.BuildStringNode("+b",
+                //            NodesTree.BuildWildCardNode("x2"))
+                //    )
+                //)
+                //,
+                //NodesTree.BuildStringNode("a0",
+                //    NodesTree.BuildWildCardNode("x1",
+                //        NodesTree.BuildStringNode("-b",
+                //            NodesTree.BuildWildCardNode("x2"))
+                //        ,
+                //        NodesTree.BuildStringNode("+b",
+                //            NodesTree.BuildWildCardNode("x2"))
+                //    )
+                //)
+                //,
+                //NodesTree.BuildWildCardNode("x0",
+                //        NodesTree.BuildStringNode("-b",
+                //            NodesTree.BuildWildCardNode("x2"))
+                //        ,
+                //        NodesTree.BuildStringNode("+b",
+                //            NodesTree.BuildWildCardNode("x2"))
+                //)
+                //,
                 NodesTree.BuildStringNode("a",
-                    NodesTree.BuildWildCardNode("x1",
-                        NodesTree.BuildStringNode("-b",
-                            NodesTree.BuildWildCardNode("x2"))
-                        ,
-                        NodesTree.BuildStringNode("+b",
-                            NodesTree.BuildWildCardNode("x2"))
-                    )
-                )
-                ,
-                NodesTree.BuildStringNode("a0",
-                    NodesTree.BuildWildCardNode("x1",
-                        NodesTree.BuildStringNode("-b",
-                            NodesTree.BuildWildCardNode("x2"))
-                        ,
-                        NodesTree.BuildStringNode("+b",
-                            NodesTree.BuildWildCardNode("x2"))
-                    )
-                )
-                ,
-                NodesTree.BuildWildCardNode("x0",
-                        NodesTree.BuildStringNode("-b",
-                            NodesTree.BuildWildCardNode("x2"))
-                        ,
-                        NodesTree.BuildStringNode("+b",
-                            NodesTree.BuildWildCardNode("x2"))
+                        NodesTree.BuildWildCardNode("x0",
+                            NodesTree.BuildStringNode("vv"))
                 )
                 );
 
