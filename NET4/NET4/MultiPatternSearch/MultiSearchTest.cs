@@ -101,12 +101,17 @@ namespace NET4.MultiPatternSearch
                 //,
                 NodesTree.BuildStringNode("a",
                         NodesTree.BuildWildCardNode("x0",
-                            NodesTree.BuildStringNode("vv"))
+                            NodesTree.BuildStringNode("/vv"))
+                )
+                ,
+                NodesTree.BuildStringNode("a",
+                        NodesTree.BuildWildCardNode("x0",
+                            NodesTree.BuildStringNode("/vv_2"))
                 )
                 );
 
             //           012345678
-            var input = "a00-b+bvv";
+            var input = "a00-b+b/vv_2";
 
             List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> results = MultiPatternSearch.FindPatternsAndResolveWildcards(root, input);
         }

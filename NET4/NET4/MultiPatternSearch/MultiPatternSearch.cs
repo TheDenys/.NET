@@ -191,7 +191,8 @@ namespace NET4.MultiPatternSearch
                     }
                 }
 
-                if (node.CanTerminate)
+                // match should be complete, e.g. input 'abc1def' should match pattern 'abc*def', but not 'abc1defg'
+                if (node.CanTerminate && nextPos == n + 1)
                 {
                     var rBuf = ResolveOptions(input, wcNode, wcStart, resolvedWildcards, nextPos, currentPattern.Length);
 
