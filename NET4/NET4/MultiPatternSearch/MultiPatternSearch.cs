@@ -142,7 +142,7 @@ namespace NET4.MultiPatternSearch
             var currentPattern = node.Value;
             var n = input.Length - 1;
             var isWildcard = node.IsWildcard;
-            var success = false;
+            var hasMatch = false;
             var nextPos = -1;
             var resolved = false;
 
@@ -154,13 +154,13 @@ namespace NET4.MultiPatternSearch
                 if (resolved)
                 {
                     var lastPatternPos = GetPositionOfPatternLastCharacter(input, resolvedWildcard, pos);
-                    success = lastPatternPos != -1;
+                    hasMatch = lastPatternPos != -1;
                     nextPos = lastPatternPos + 1;
                 }
                 else
                 {
                     // we want wildcard be a non-empty and non-slash, change this according to specific wildcard requirements
-                    success = input[pos] != '/';
+                    hasMatch = input[pos] != '/';
                     nextPos = pos + 1;
                 }
             }
@@ -169,18 +169,18 @@ namespace NET4.MultiPatternSearch
                 // root node
                 if (currentPattern == "")
                 {
-                    success = true;
+                    hasMatch = true;
                     nextPos = 0;
                 }
                 else
                 {
                     var lastPatternPos = GetPositionOfPatternLastCharacter(input, currentPattern, pos);
-                    success = lastPatternPos != -1;
+                    hasMatch = lastPatternPos != -1;
                     nextPos = lastPatternPos + 1;
                 }
             }
 
-            if (success)
+            if (hasMatch)
             {
                 if (nextPos <= n)
                 {
@@ -191,19 +191,32 @@ namespace NET4.MultiPatternSearch
                     }
                 }
 
-                // match should be complete, e.g. input 'abc1def' should match pattern 'abc*def', but not 'abc1defg'
-                if (node.CanTerminate && nextPos == n + 1)
+                if (node.CanTerminate)
                 {
                     var rBuf = ResolveOptions(input, wcNode, wcStart, resolvedWildcards, nextPos, currentPattern.Length);
+                    var match = false;
 
-                    // current node is an unresolved wildcard, so resolve it
-                    if (isWildcard && !resolved)
+                    if (isWildcard)
                     {
-                        var resolvedValue = input.Substring(pos);
-                        rBuf.Add(currentPattern, resolvedValue);
+                        match = true;
+
+                        // current node is an unresolved wildcard, so resolve it
+                        if (!resolved)
+                        {
+                            var resolvedValue = input.Substring(pos);
+                            rBuf.Add(currentPattern, resolvedValue);
+                        }
+                    }
+                    else
+                    {
+                        // this is a last non-wildcard node, so the match of pattern has to be complete to the last character, e.g. input 'abc1def' should match pattern 'abc*def', but not 'abc1defg'
+                        match = nextPos == n + 1;
                     }
 
-                    results.Add(Tuple.Create(node, rBuf));
+                    if (match)
+                    {
+                        results.Add(Tuple.Create(node, rBuf));
+                    }
                 }
             }
         }

@@ -14,7 +14,7 @@ namespace NET4.MultiPatternSearch
             patternLastPos = MultiPatternSearch.GetPositionOfPatternLastCharacter("aaaacmelab", "acme", 4);// expect -1
         }
 
-        [Run(0)]
+        [Run(1)]
         public void BuildTree()
         {
             var root = MultiPatternSearch.BuildTree(new List<List<PatternElement>> {
@@ -53,7 +53,7 @@ namespace NET4.MultiPatternSearch
             var results5 = MultiPatternSearch.FindPatternsAndResolveWildcards(root3, input5);// should produce 0 results
         }
 
-        [Run(1)]
+        [Run(0)]
         public void TreeGo()
         {
             /* We have to make a copy of resolved collection to avoid mixing resolved values for patterns that have common prefix:
@@ -110,7 +110,7 @@ namespace NET4.MultiPatternSearch
                 )
                 );
 
-            //           012345678
+            //           012345678901
             var input = "a00-b+b/vv_2";
 
             List<System.Tuple<NodesTree.Node, Dictionary<string, string>>> results = MultiPatternSearch.FindPatternsAndResolveWildcards(root, input);
