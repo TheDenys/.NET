@@ -5,6 +5,7 @@ namespace LightIndexer.Config
     /// </summary>
     internal static class Constants
     {
+        internal const string EXCLUDE = "EXCLUDE";
         internal const string IGNORED_EXTENSIONS = "IGNORED_EXTENSIONS";
         internal const string LUCENE_DIRECTORY_TYPE = "LUCENE_DIRECTORY_TYPE";
         internal const string LUCENE_DIRECTORY_PATH = "LUCENE_DIRECTORY_PATH";

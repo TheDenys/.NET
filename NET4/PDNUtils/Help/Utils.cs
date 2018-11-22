@@ -1,15 +1,14 @@
+using PDNUtils.Worker;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.ServiceModel;
 using System.Text;
 using System.Threading;
-using System.Linq;
-using Microsoft.Win32;
-using PDNUtils.Worker;
 
 namespace PDNUtils.Help
 {
@@ -102,12 +101,12 @@ namespace PDNUtils.Help
             return (T)Enum.Parse(typeof(T), (string)value);
         }
 
-        public static long GetFilesCount(IEnumerable<DirectoryInfo> paths, int? depth)
+        public static long GetFilesCount(IEnumerable<DirectoryInfo> paths, int? depth, Func<string, bool> pathExcludePredicate)
         {
             long files = 0;
             var dirs = paths.Select(d => d.FullName);
             Action<string> fCounter = fi => Interlocked.Increment(ref files);
-            var walker = new LongDirectoryWalker(dirs, fCounter, true, null);
+            var walker = new LongDirectoryWalker(dirs, fCounter, true, null, pathExcludePredicate);
             walker.LongWalk();
             return files;
         }

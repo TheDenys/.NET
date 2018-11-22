@@ -14,7 +14,7 @@ namespace NET4.MultiPatternSearch
             patternLastPos = MultiPatternSearch.GetPositionOfPatternLastCharacter("aaaacmelab", "acme", 4);// expect -1
         }
 
-        [Run(1)]
+        [Run(0)]
         public void BuildTree()
         {
             var root = MultiPatternSearch.BuildTree(new List<List<PatternElement>> {

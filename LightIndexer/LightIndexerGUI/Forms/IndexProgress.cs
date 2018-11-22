@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Forms;
+using LightIndexer.Config;
 using LightIndexer.Indexing;
 
 namespace LightIndexerGUI.Forms
@@ -26,7 +27,7 @@ namespace LightIndexerGUI.Forms
             lblProgress.BackColor = lblProgress.Parent.BackColor;
 
             // inittialize Indexer class
-            indexer = new Indexer(paths);
+            indexer = new Indexer(paths, Configurator.ExcludeMatcher);
             indexer.RefreshEvent += dipProgressChanged;
 
             //initialize BackgroundWorker

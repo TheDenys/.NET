@@ -42,7 +42,7 @@ namespace LightIndexer.Indexing
 
         private Exception LastError;
 
-        public Indexer(IEnumerable<string> paths)
+        public Indexer(IEnumerable<string> paths, Lazy<ExcludeMatcher> excludeMatcher)
         {
             cancellationSource = new CancellationTokenSource();
 
@@ -73,6 +73,7 @@ namespace LightIndexer.Indexing
             this.finishedState = new FinishedStated(this);
             this.failedState = new FailedSate(this);
             this.currentState = pendingState;
+            this.excludeMatcher = excludeMatcher;
         }
 
         public void RaiseEvent()
@@ -105,11 +106,13 @@ namespace LightIndexer.Indexing
 
             try
             {
+                var excludeMatcherInstance = excludeMatcher.Value;
+                
                 // count amount of file in directories and write result to _total
                 Task<long> countFilesTask = new Task<long>(() =>
                 {
                     log.Info("started counting files");
-                    return Utils.GetFilesCount(dirs.OfType<DirectoryInfo>(), null);
+                    return Utils.GetFilesCount(dirs.OfType<DirectoryInfo>(), null, excludeMatcherInstance.IsExcluded);
                 });
 
                 // update _total
@@ -153,7 +156,7 @@ namespace LightIndexer.Indexing
                             currentState.PauseWait();
                         };
 
-                        walker = new LongDirectoryWalker(paths, action, parallel, null);
+                        walker = new LongDirectoryWalker(paths, action, parallel, null, excludeMatcherInstance.IsExcluded);
                         walker.LongWalk();
 
                         sw.Stop();
@@ -327,6 +330,7 @@ namespace LightIndexer.Indexing
         private readonly IndexerStateBase stoppedState;
         private readonly IndexerStateBase failedState;
         private readonly IndexerStateBase finishedState;
+        private readonly Lazy<ExcludeMatcher> excludeMatcher;
 
         private void SwitchState(IndexerStateBase target)
         {

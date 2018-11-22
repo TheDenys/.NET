@@ -1,13 +1,14 @@
+using LightIndexer.Config;
+using log4net;
+using Lucene.Net.Documents;
+using Microsoft.Experimental.IO;
+using PDNUtils.Help;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using LightIndexer.Config;
-using Microsoft.Experimental.IO;
-using log4net;
-using Lucene.Net.Documents;
-using PDNUtils.Help;
-using FIF = LightIndexer.Indexing.FileIndexingFields;
 using FF = LightIndexer.Lucene.FieldFactory;
+using FIF = LightIndexer.Indexing.FileIndexingFields;
 
 namespace LightIndexer.Indexing
 {
@@ -25,6 +26,8 @@ namespace LightIndexer.Indexing
         private static readonly object _ignoredExtensionsCacheLocker = new object();
         private static readonly ISet<string> ignoredExtensionsCache = new HashSet<string>();
 
+        private static readonly Lazy<ExcludeMatcher> excludeMatcher = Configurator.ExcludeMatcher;
+
         /// <summary>
         /// Use this function to define if we skip this file content or not.
         /// It allows us to skip binary files according to file extension.
@@ -32,7 +35,7 @@ namespace LightIndexer.Indexing
         /// </summary>
         /// <param name="fi"></param>
         /// <returns></returns>
-        internal static bool Skip(FileInfo fi)
+        internal static bool Skip_OBSOLETE(FileInfo fi)
         {
             if (ignoredExtensions == null || ignoredExtensions.Count() == 0)
             {
@@ -101,7 +104,7 @@ namespace LightIndexer.Indexing
         /// </summary>
         /// <param name="fileInfo">file to be indexed</param>
         /// <returns>document instance</returns>
-        public static Document GetDocument(FileInfo fileInfo)
+        public static Document GetDocument_OBSOLETE(FileInfo fileInfo)
         {
             TextReader textReader = null;
             var doc = new Document();
@@ -111,7 +114,9 @@ namespace LightIndexer.Indexing
             // fm.Value.Key - indexing type
             // fm.Value.Value - function for retrieving information
             MappingConfig.FUNC_MAPPINGS.ForEach(fm => doc.Add(FF.BuildField(fm.Value.Key, fm.Key, fm.Value.Value(fileInfo))), false);
-            bool isBigger = IsBiggerThanMaxSize(fileInfo), skip = Skip(fileInfo);
+            bool isBigger = IsBiggerThanMaxSize(fileInfo);
+            //, skip = Skip(fileInfo);
+            var skip = true;
 
             if (isBigger || skip)
             {
@@ -152,7 +157,15 @@ namespace LightIndexer.Indexing
             // fm.Value.Value - function for retrieving information
             MappingConfig.LONG_FUNC_MAPPINGS.ForEach(fm => doc.Add(FF.BuildField(fm.Value.Key, fm.Key, fm.Value.Value(fileInfo, true))), false);
 
-            bool isBigger = LongIsBiggerThanMaxSize(fileInfo), skip = LongSkip(fileInfo);
+            var exclude = excludeMatcher.Value.IsExcluded(fileInfo);
+
+            if (exclude)
+            {
+                return new IndexerDocument(null, null);
+            }
+
+            var isBigger = LongIsBiggerThanMaxSize(fileInfo);
+            var skip = LongSkip(fileInfo);
 
             if (log.IsDebugEnabled && skip) { log.DebugFormat("file {0} skipped", fileInfo); }
 

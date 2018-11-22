@@ -36,6 +36,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotNet.Glob, Version=2.1.1.0, Culture=neutral, PublicKeyToken=b68cc888b4f632d1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNet.Glob.2.1.1\lib\net45\DotNet.Glob.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\lib\log4net.dll</HintPath>
     </Reference>
@@ -58,6 +61,7 @@
     <Compile Include="Config\IndexManager.cs" />
     <Compile Include="Indexing\DataRetriverFactory.cs" />
     <Compile Include="Indexing\DocumentBuilder.cs" />
+    <Compile Include="Indexing\ExcludeMatcher.cs" />
     <Compile Include="Indexing\FileIndexingFields.cs" />
     <Compile Include="Indexing\FilterOptions.cs" />
     <Compile Include="Indexing\IDataPageRetriever.cs" />
@@ -94,7 +98,9 @@
       <Name>PDNUtils</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

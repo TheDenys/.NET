@@ -19,7 +19,11 @@ namespace LightIndexerConsole
             log.Debug("started");
 
             //new TestIndexing().TestIndexSearch();
-            //return;
+            Configurator.ExcludeMatcher.Value.IsExcluded("d:\\pdn\\github\\.net\\NET4\\_ReSharper.Caches");
+            Configurator.ExcludeMatcher.Value.IsExcluded("d:\\pdn\\github\\.net\\NET4\\_ReSharper.Caches\\");
+            Configurator.ExcludeMatcher.Value.IsExcluded("d:\\pdn\\github\\.net\\NET4\\_ReSharper.Caches\\ReSharperPlatformVs145.NET4Solution\\XmlIndex\\System.Xml.Linq.xml\\7E9AE9E7.bin");
+
+            return;
 
             string argsStr = string.Join(" ", args);
             Console.Out.WriteLine("argsStr = {0}", argsStr);
@@ -54,7 +58,7 @@ namespace LightIndexerConsole
                                 goto case "a";
                             }
                         case "y":
-                            IndexingFacade.IndexWrite(path, Show, null);
+                            //IndexingFacade.IndexWrite(path, Show, null);
                             goto default;
                         default:
                             finish = true;

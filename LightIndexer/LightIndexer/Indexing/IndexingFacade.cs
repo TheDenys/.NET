@@ -30,7 +30,7 @@ namespace LightIndexer.Indexing
         private static readonly string EXTENSION = FileIndexingFields.Extension.F2S();
         private static readonly string NAME_WITHOUT_EXTENSION = FIF.NameWithoutExtension.F2S();
 
-        public static void IndexWrite(string path, ShowDelegate show, int? depth)
+        public static void IndexWrite_OBSOLETE(string path, ShowDelegate show, int? depth)
         {
             var total = Utils.GetFilesCount(path, depth);
 
@@ -64,7 +64,7 @@ namespace LightIndexer.Indexing
                             Document doc = null;
                             try
                             {
-                                doc = DocumentBuilder.GetDocument(fi);
+                                //doc = DocumentBuilder.GetDocument(fi);
 
                                 if (doc != null)
                                 {

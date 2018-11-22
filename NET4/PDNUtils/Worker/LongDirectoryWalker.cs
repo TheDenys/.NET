@@ -1,12 +1,12 @@
-﻿using System;
+﻿using log4net;
+using Microsoft.Experimental.IO;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Experimental.IO;
-using log4net;
 
 namespace PDNUtils.Worker
 {
@@ -14,7 +14,7 @@ namespace PDNUtils.Worker
     {
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        public LongDirectoryWalker(IEnumerable<string> paths, Action<string> action, bool parallel, IEnumerable<string> ignoredExtensions)
+        public LongDirectoryWalker(IEnumerable<string> paths, Action<string> action, bool parallel, IEnumerable<string> ignoredExtensions, Func<string, bool> pathExcludePredicate)
             : base(parallel, ignoredExtensions)
         {
             log.DebugFormat("ctor. {0}", paths);
@@ -24,6 +24,7 @@ namespace PDNUtils.Worker
             if (log.IsInfoEnabled) log.InfoFormat("Paths: '{0}'", string.Join(";", p));
             this.paths = p;
             this.action = action;
+            this.pathExcludePredicate = pathExcludePredicate ?? ((string _) => false);
         }
 
         public void LongWalk()
@@ -53,7 +54,7 @@ namespace PDNUtils.Worker
         private IEnumerable<string> paths;
 
         private readonly Action<string> action;
-
+        private readonly Func<string, bool> pathExcludePredicate;
         private static int maxConcurrentProducerTasks = 100; // indeed tasks, not threads
 
         private static int maxConcurrentConsumerTasks = 100;
@@ -130,9 +131,10 @@ namespace PDNUtils.Worker
 
                 ProduceParallelOrOnCurrent(() =>
                 {
-                    //Thread.Sleep(100);
                     if (!cancel.IsCancellationRequested)
                     {
+                        if (pathExcludePredicate(path)) return;
+
                         bool exists = false;
 
                         try
@@ -263,7 +265,7 @@ namespace PDNUtils.Worker
         private void Add(string file)
         {
             queue.Add(file);
-            
+
             if (log.IsDebugEnabled)
             {
                 log.DebugFormat("Added '{0}' to queue. Total items: {1}.", file, queue.Count);

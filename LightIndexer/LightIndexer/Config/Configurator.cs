@@ -1,9 +1,10 @@
+using LightIndexer.Indexing;
+using log4net;
+using PDNUtils.Help;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
-using PDNUtils.Help;
-using log4net;
 
 namespace LightIndexer.Config
 {
@@ -12,13 +13,18 @@ namespace LightIndexer.Config
     /// </summary>
     public sealed class Configurator
     {
-        private static readonly ILog log =
-            LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         private static IEnumerable<string> ignoredExt;
 
+        public static readonly Lazy<ExcludeMatcher> ExcludeMatcher = new Lazy<ExcludeMatcher>(() =>
+        {
+            var exclusions = ConfigurationManager.AppSettings[Constants.EXCLUDE];
+            return new ExcludeMatcher(exclusions);
+        });
+
         /// <summary>
-        /// Collection of extensions which will be ignored in indexing
+        /// Collection of extensions which will be ignored from content indexing
         /// </summary>
         internal static IEnumerable<string> IgnoredExtensions
         {
