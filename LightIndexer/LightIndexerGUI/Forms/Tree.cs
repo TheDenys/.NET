@@ -12,7 +12,6 @@ namespace LightIndexerGUI.Forms
 {
     public partial class Tree : Form, ITreeView
     {
-
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         private readonly TreePresenter treePresenter;
@@ -64,13 +63,9 @@ namespace LightIndexerGUI.Forms
 
         public void ShowIndexProgress(IEnumerable<string> paths)
         {
+            treePresenter.DeleteIndex();
             //open form with progressbar for indexing
             new IndexProgress(paths).ShowDialog();
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            treePresenter.DeleteIndex();
         }
 
         protected override void OnClosed(EventArgs e)

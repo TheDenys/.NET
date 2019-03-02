@@ -35,41 +35,6 @@ namespace LightIndexer.Indexing
         /// </summary>
         /// <param name="fi"></param>
         /// <returns></returns>
-        internal static bool Skip_OBSOLETE(FileInfo fi)
-        {
-            if (ignoredExtensions == null || ignoredExtensions.Count() == 0)
-            {
-                return false;
-            }
-            var fileExt = fi.Extension.ToLowerInvariant();
-            if (ignoredExtensionsCache.Contains(fileExt))
-            {
-                return true;
-            }
-            else
-            {
-                var skip =
-                    ignoredExtensions.Where(ext => fi.Extension != null && fi.Extension.ToLowerInvariant().Contains(ext)).Count() > 0;
-
-                if (skip)
-                {
-                    lock (_ignoredExtensionsCacheLocker)
-                    {
-                        ignoredExtensionsCache.Add(fileExt);
-                    }
-                }
-
-                return skip;
-            }
-        }
-
-        /// <summary>
-        /// Use this function to define if we skip this file content or not.
-        /// It allows us to skip binary files according to file extension.
-        /// Set of extensions to skip is defined in app.config file.
-        /// </summary>
-        /// <param name="fi"></param>
-        /// <returns></returns>
         internal static bool LongSkip(string fi)
         {
             if (ignoredExtensions == null || ignoredExtensions.Count() == 0)
@@ -97,48 +62,6 @@ namespace LightIndexer.Indexing
 
                 return skip;
             }
-        }
-
-        /// <summary>
-        /// Builds a <see cref="Document"/> instance based on <paramref name="fileInfo"/>
-        /// </summary>
-        /// <param name="fileInfo">file to be indexed</param>
-        /// <returns>document instance</returns>
-        public static Document GetDocument_OBSOLETE(FileInfo fileInfo)
-        {
-            TextReader textReader = null;
-            var doc = new Document();
-
-            // add fileds to document
-            // fm.Key - field name
-            // fm.Value.Key - indexing type
-            // fm.Value.Value - function for retrieving information
-            MappingConfig.FUNC_MAPPINGS.ForEach(fm => doc.Add(FF.BuildField(fm.Value.Key, fm.Key, fm.Value.Value(fileInfo))), false);
-            bool isBigger = IsBiggerThanMaxSize(fileInfo);
-            //, skip = Skip(fileInfo);
-            var skip = true;
-
-            if (isBigger || skip)
-            {
-                if (log.IsInfoEnabled && isBigger)
-                {
-                    log.InfoFormat("file {0} size {1} is bigger than {2}", fileInfo.FullName, fileInfo.Length, Constants.MAX_FILE_SIZE);
-                }
-
-                if (log.IsDebugEnabled && skip)
-                {
-                    log.DebugFormat("file {0} skipped", fileInfo.FullName);
-                }
-
-                textReader = new StringReader(string.Empty);// content empty
-            }
-            else
-            {
-                textReader = new StreamReader(fileInfo.OpenRead());
-            }
-
-            doc.Add(FF.Text(CONTENT_NAME, textReader));            // add content field
-            return doc;
         }
 
         /// <summary>
