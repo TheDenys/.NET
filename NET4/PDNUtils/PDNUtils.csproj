@@ -82,6 +82,7 @@
     <Compile Include="Help\FSHelper.cs" />
     <Compile Include="Help\GUIMethods.cs" />
     <Compile Include="Help\PasswordGenerator.cs" />
+    <Compile Include="Help\RandomNumber.cs" />
     <Compile Include="Help\ReflectionHelper.cs" />
     <Compile Include="Help\StubReader.cs" />
     <Compile Include="Help\Utils.cs" />

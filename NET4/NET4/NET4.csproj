@@ -207,6 +207,7 @@
     <Compile Include="TestClasses\TestMoles.cs" />
     <Compile Include="TestClasses\TestMoq.cs" />
     <Compile Include="TestClasses\TestNUnit.cs" />
+    <Compile Include="TestClasses\TestProbabilities.cs" />
     <Compile Include="TestClasses\TestRegex.cs" />
     <Compile Include="TestClasses\TestRx.cs" />
     <Compile Include="TestClasses\TestSerializeWCF.cs" />

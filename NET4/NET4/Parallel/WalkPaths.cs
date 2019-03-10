@@ -51,7 +51,7 @@ namespace NET4.Parallel
             //    worker.Walk(inc);
             //}
             Action<string> inc = (s) => Interlocked.Increment(ref c);
-            using (var worker = new LongDirectoryWalker(paths, inc, true, null))
+            using (var worker = new LongDirectoryWalker(paths, inc, true, null, null))
             {
                 worker.LongWalk();
             }
