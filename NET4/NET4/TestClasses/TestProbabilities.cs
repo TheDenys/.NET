@@ -9,7 +9,7 @@ namespace NET4.TestClasses
 {
     class TestProbabilities : RunableBase
     {
-        [Run(1)]
+        [Run(0)]
         public void Monty_Hall_Simulation()
         {
             //var buf = GetNumbers(0, 2).Take(20).ToArray();
@@ -121,6 +121,26 @@ namespace NET4.TestClasses
         }
 
         private int GetRandom(int min, int max) => PDNUtils.Help.RandomNumber.Next(min, max);
+
+        [Run(1)]
+        public void TestGen()
+        {
+            int lim = 3;
+            long total = 0;
+            long[] counts = new long[lim];
+
+            foreach (int pos in GetNumbers(0, lim - 1))
+            {
+                total++;
+                counts[pos]++;
+
+                if (total % 4000000 == 0)
+                {
+                    Debug($"total: {total} counts: [{string.Join(",", counts)}] %: [{string.Join(",", counts.Select(c => (100 * c) / total))}]");
+                    Debug(Environment.NewLine);
+                }
+            }
+        }
 
         //private long GetShowNumber(BitArray bits, int[] posArr, int win, int bet)
         //{
